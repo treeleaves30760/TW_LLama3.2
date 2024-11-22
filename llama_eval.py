@@ -19,7 +19,7 @@ DEFAULT_MODEL = "meta-llama/Llama-3.2-11B-Vision-Instruct"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', type=str, choices=['base', '1epoch', '3epochs', '5epochs'],
+    parser.add_argument('--model', type=str, choices=['1epoch', '3epochs', '5epochs'],
                       help='Select model version', default='5epochs')
     parser.add_argument('--temperature', type=float, default=0.7,
                       help='Temperature for generation (default: 0.7)')
@@ -29,8 +29,8 @@ def parse_args():
 
 def load_model_and_processor(model_version):
     """Load the specified version of the fine-tuned model."""
+    base_model_path = os.getenv('LLAMA_BASE')
     model_paths = {
-        'base': DEFAULT_MODEL,
         '1epoch': os.getenv('LLAMA_1EPOCH'),
         '3epochs': os.getenv('LLAMA_3EPOCHS'),
         '5epochs': os.getenv('LLAMA_5EPOCHS')
@@ -49,7 +49,13 @@ def load_model_and_processor(model_version):
 
     # Prepare model and processor with accelerator
     model, processor = accelerator.prepare(model, processor)
-    return model, processor
+    base_model = MllamaForConditionalGeneration.from_pretrained(
+        base_model_path,
+        torch_dtype=torch.bfloat16,
+        use_safetensors=True,
+        device_map=device,
+    )
+    return model, base_model, processor
 
 def process_image(image_path: str) -> PIL_Image.Image:
     """Open and convert an image from the specified path."""
@@ -103,12 +109,14 @@ def create_markdown_report(results, output_path):
     """Create a markdown report with images and responses."""
     markdown_content = "# LLaMA Vision Model Evaluation Report\n\n"
     
-    for image_path, response in results:
+    for image_path, response, base_response in results:
         rel_image_path = os.path.relpath(image_path, start=os.path.dirname(output_path))
         markdown_content += f"## Image: {os.path.basename(image_path)}\n\n"
         markdown_content += f"![{os.path.basename(image_path)}]({rel_image_path})\n\n"
         markdown_content += "### Model Response:\n\n"
         markdown_content += f"{response}\n\n"
+        markdown_content += "### Base Model Response:\n\n"
+        markdown_content += f"{base_response}\n\n"
         markdown_content += "---\n\n"
     
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -118,7 +126,7 @@ def main():
     args = parse_args()
     
     print(f"Loading {args.model} model...")
-    model, processor = load_model_and_processor(args.model)
+    model, base_model, processor = load_model_and_processor(args.model)
     
     # Get list of image files
     image_dir = Path(os.getenv('IMAGE_DIR'))
@@ -143,7 +151,15 @@ def main():
                 args.temperature,
                 args.top_p
             )
-            results.append((str(image_path), response))
+            base_response = generate_text_from_image(
+                base_model, 
+                processor, 
+                image, 
+                question,
+                args.temperature,
+                args.top_p
+            )
+            results.append((str(image_path), response, base_response))
             
             # Clear cache after each image
             if torch.cuda.is_available():
