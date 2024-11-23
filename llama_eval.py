@@ -3,6 +3,7 @@ import os
 import sys
 from pathlib import Path
 from tqdm import tqdm
+from dotenv import load_dotenv
 
 import torch
 from accelerate import Accelerator
@@ -16,6 +17,8 @@ device = accelerator.device
 
 # Constants
 DEFAULT_MODEL = "meta-llama/Llama-3.2-11B-Vision-Instruct"
+
+load_dotenv()
 
 def parse_args():
     parser = argparse.ArgumentParser()
