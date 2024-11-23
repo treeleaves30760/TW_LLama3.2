@@ -37,6 +37,7 @@ def load_model_and_processor(model_version):
     }
     
     model_path = model_paths[model_version]
+    print(f"Loading model from {model_path}...")
     
     # Load model and processor
     model = MllamaForConditionalGeneration.from_pretrained(
