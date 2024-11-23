@@ -194,7 +194,7 @@ def main():
     output_dir.mkdir(exist_ok=True)
     
     # Generate report
-    time_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    time_str = datetime.now().strftime('%Y-%m-%d %H-%M-%S')
     output_path = output_dir / f'evaluation_report_{args.model}_{time_str}.md'
     create_markdown_report(results, output_path)
     print(f"Evaluation complete. Report saved to {output_path}")
