@@ -117,16 +117,18 @@ def create_markdown_report(results, output_path):
     """Create a markdown report with images and responses."""
     markdown_content = "# LLaMA Vision Model Evaluation Report\n\n"
     
-    for image_path, response, base_response, with_location_response in results:
+    for image_path, response, base_response, with_location_response, base_with_location_response in results:
         rel_image_path = os.path.relpath(image_path, start=os.path.dirname(output_path))
         markdown_content += f"## Image: {os.path.basename(image_path)}\n\n"
         markdown_content += f"![{os.path.basename(image_path)}]({rel_image_path})\n\n"
         markdown_content += "### Model Response:\n\n"
-        markdown_content += f"{response}\n\n"
+        markdown_content += f"{response}\n\n\n"
         markdown_content += "### Base Model Response:\n\n"
-        markdown_content += f"{base_response}\n\n"
+        markdown_content += f"{base_response}\n\n\n"
         markdown_content += "### Model Response with Location:\n\n"
-        markdown_content += f"{with_location_response}\n\n"
+        markdown_content += f"{with_location_response}\n\n\n"
+        markdown_content += "### Base Model Response with Location:\n\n"
+        markdown_content += f"{base_with_location_response}\n\n\n"
         markdown_content += "---\n\n"
     
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -179,7 +181,15 @@ def main():
                 temperature=args.temperature,
                 top_p=args.top_p
             )
-            results.append((str(image_path), response, base_response, with_location_response))
+            base_with_location_response = generate_text_from_image(
+                model=base_model, 
+                processor=processor, 
+                image=image, 
+                prompt_text=question_with_location,
+                temperature=args.temperature,
+                top_p=args.top_p
+            )
+            results.append((str(image_path), response, base_response, with_location_response, base_with_location_response))
             
             # Clear cache after each image
             if torch.cuda.is_available():
