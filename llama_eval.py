@@ -159,7 +159,7 @@ def main():
                 model=model, 
                 processor=processor, 
                 image=image, 
-                questuion=question,
+                prompt_text=question,
                 temperature=args.temperature,
                 top_p=args.top_p
             )
@@ -167,7 +167,7 @@ def main():
                 model=base_model, 
                 processor=processor, 
                 image=image, 
-                questuion=question,
+                prompt_text=question,
                 temperature=args.temperature,
                 top_p=args.top_p
             )
@@ -175,7 +175,7 @@ def main():
                 model=model, 
                 processor=processor, 
                 image=image, 
-                questuion=question_with_location,
+                prompt_text=question_with_location,
                 temperature=args.temperature,
                 top_p=args.top_p
             )
