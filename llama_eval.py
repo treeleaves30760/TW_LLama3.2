@@ -73,6 +73,10 @@ def generate_text_from_image(
     combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。分析景點時請先列出這個照片的細節，再推測這是那個景點。所有對話請用繁體中文進行。<|end_of_text|>
 <|start_header_id|>user<|end_header_id|><|image|>{prompt_text}<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>"""
+
+    with_location_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。分析景點時請先列出這個照片的細節，再推測這是那個景點。所有對話請用繁體中文進行。<|end_of_text|>
+<|start_header_id|>user<|end_header_id|><|image|>{prompt_text}<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>"""
     
     # Process inputs using the processor
     inputs = processor(
@@ -109,7 +113,7 @@ def create_markdown_report(results, output_path):
     """Create a markdown report with images and responses."""
     markdown_content = "# LLaMA Vision Model Evaluation Report\n\n"
     
-    for image_path, response, base_response in results:
+    for image_path, response, base_response, with_location_response in results:
         rel_image_path = os.path.relpath(image_path, start=os.path.dirname(output_path))
         markdown_content += f"## Image: {os.path.basename(image_path)}\n\n"
         markdown_content += f"![{os.path.basename(image_path)}]({rel_image_path})\n\n"
@@ -117,6 +121,8 @@ def create_markdown_report(results, output_path):
         markdown_content += f"{response}\n\n"
         markdown_content += "### Base Model Response:\n\n"
         markdown_content += f"{base_response}\n\n"
+        markdown_content += "### Model Response with Location:\n\n"
+        markdown_content += f"{with_location_response}\n\n"
         markdown_content += "---\n\n"
     
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -142,24 +148,34 @@ def main():
     for image_path in tqdm(image_files):
         try:
             # Process one image at a time to manage memory
+            location_name = image_path.split('images/')[1].split('-')[0]
+            question_with_location = f"圖片中的景點是{location_name}, 請告訴我關於這個景點的事情"
             image = process_image(str(image_path))
             response = generate_text_from_image(
-                model, 
-                processor, 
-                image, 
-                question,
-                args.temperature,
-                args.top_p
+                model=model, 
+                processor=processor, 
+                image=image, 
+                questuion=question,
+                temperature=args.temperature,
+                top_p=args.top_p
             )
             base_response = generate_text_from_image(
-                base_model, 
-                processor, 
-                image, 
-                question,
-                args.temperature,
-                args.top_p
+                model=base_model, 
+                processor=processor, 
+                image=image, 
+                questuion=question,
+                temperature=args.temperature,
+                top_p=args.top_p
             )
-            results.append((str(image_path), response, base_response))
+            with_location_response = generate_text_from_image(
+                model=model, 
+                processor=processor, 
+                image=image, 
+                questuion=question_with_location,
+                temperature=args.temperature,
+                top_p=args.top_p
+            )
+            results.append((str(image_path), response, base_response, with_location_response))
             
             # Clear cache after each image
             if torch.cuda.is_available():
