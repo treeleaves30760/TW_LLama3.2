@@ -152,7 +152,7 @@ def main():
     for image_path in tqdm(image_files):
         try:
             # Process one image at a time to manage memory
-            location_name = image_path.split('images/')[1].split('-')[0]
+            location_name = str(image_path).split('images/')[1].split('-')[0]
             question_with_location = f"圖片中的景點是{location_name}, 請告訴我關於這個景點的事情"
             image = process_image(str(image_path))
             response = generate_text_from_image(
