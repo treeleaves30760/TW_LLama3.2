@@ -120,22 +120,22 @@ def create_markdown_report(results, output_path):
     markdown_content = "# LLaMA Vision Model Evaluation Report\n\n"
     
     for (image_path, 
-         response, base_response, 
-         with_location_response, base_with_location_response, 
+        #  response, base_response, 
+        #  with_location_response, base_with_location_response, 
          question_with_choice, with_choice_response, base_with_location_response) in results:
         rel_image_path = os.path.relpath(image_path, start=os.path.dirname(output_path))
         markdown_content += f"## Image: {os.path.basename(image_path)}\n\n"
         markdown_content += f"![{os.path.basename(image_path)}]({rel_image_path})\n\n"
-        markdown_content += "### Model Response Direct Ask:\n\n"
-        markdown_content += "#### Answer with finetuned model:\n"
-        markdown_content += f"{response}\n\n\n"
-        markdown_content += "#### Answer with base model:\n"
-        markdown_content += f"{base_response}\n\n\n"
-        markdown_content += "### Model Response with Location:\n\n"
-        markdown_content += "#### Answer with finetuned model:\n"
-        markdown_content += f"{with_location_response}\n\n\n"
-        markdown_content += "#### Answer with base model:\n"
-        markdown_content += f"{base_with_location_response}\n\n\n"
+        # markdown_content += "### Model Response Direct Ask:\n\n"
+        # markdown_content += "#### Answer with finetuned model:\n"
+        # markdown_content += f"{response}\n\n\n"
+        # markdown_content += "#### Answer with base model:\n"
+        # markdown_content += f"{base_response}\n\n\n"
+        # markdown_content += "### Model Response with Location:\n\n"
+        # markdown_content += "#### Answer with finetuned model:\n"
+        # markdown_content += f"{with_location_response}\n\n\n"
+        # markdown_content += "#### Answer with base model:\n"
+        # markdown_content += f"{base_with_location_response}\n\n\n"
         markdown_content += "### Model Response with Choice:\n\n"
         markdown_content += "#### Question:\n"
         markdown_content += f"{question_with_choice}\n"
@@ -175,38 +175,38 @@ def main():
             random.shuffle(multiple_choice)
             question_with_choice = f"圖片中的景點是哪裡？\nA. {multiple_choice[0]}\nB. {multiple_choice[1]}\nC. {multiple_choice[2]}\nD. {multiple_choice[3]}。請說明為什麼選擇這個景點以及這個景點的資訊"
             image = process_image(str(image_path))
-            response = generate_text_from_image(
-                model=model, 
-                processor=processor, 
-                image=image, 
-                prompt_text=question,
-                temperature=args.temperature,
-                top_p=args.top_p
-            )
-            base_response = generate_text_from_image(
-                model=base_model, 
-                processor=processor, 
-                image=image, 
-                prompt_text=question,
-                temperature=args.temperature,
-                top_p=args.top_p
-            )
-            with_location_response = generate_text_from_image(
-                model=model, 
-                processor=processor, 
-                image=image, 
-                prompt_text=question_with_location,
-                temperature=args.temperature,
-                top_p=args.top_p
-            )
-            base_with_location_response = generate_text_from_image(
-                model=base_model, 
-                processor=processor, 
-                image=image, 
-                prompt_text=question_with_location,
-                temperature=args.temperature,
-                top_p=args.top_p
-            )
+            # response = generate_text_from_image(
+            #     model=model, 
+            #     processor=processor, 
+            #     image=image, 
+            #     prompt_text=question,
+            #     temperature=args.temperature,
+            #     top_p=args.top_p
+            # )
+            # base_response = generate_text_from_image(
+            #     model=base_model, 
+            #     processor=processor, 
+            #     image=image, 
+            #     prompt_text=question,
+            #     temperature=args.temperature,
+            #     top_p=args.top_p
+            # )
+            # with_location_response = generate_text_from_image(
+            #     model=model, 
+            #     processor=processor, 
+            #     image=image, 
+            #     prompt_text=question_with_location,
+            #     temperature=args.temperature,
+            #     top_p=args.top_p
+            # )
+            # base_with_location_response = generate_text_from_image(
+            #     model=base_model, 
+            #     processor=processor, 
+            #     image=image, 
+            #     prompt_text=question_with_location,
+            #     temperature=args.temperature,
+            #     top_p=args.top_p
+            # )
             with_choice_response = generate_text_from_image(
                 model=model, 
                 processor=processor, 
@@ -223,8 +223,9 @@ def main():
                 temperature=args.temperature,
                 top_p=args.top_p
             )
-            results.append((str(image_path), response, base_response, 
-                            with_location_response, base_with_location_response, 
+            results.append((str(image_path), 
+                            # response, base_response, 
+                            # with_location_response, base_with_location_response, 
                             question_with_choice, with_choice_response, base_with_choice_response))
             
             # Clear cache after each image
