@@ -53,7 +53,7 @@ def generate_text_from_image(
     model, processor, image, prompt_text: str, temperature: float, top_p: float, device
 ):
     """Generate text from an image using the model and processor."""
-    combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點，對於景點的資訊也十分清楚。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
+    combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
 <|start_header_id|>user<|end_header_id|><|image|>{prompt_text}<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>"""
     
