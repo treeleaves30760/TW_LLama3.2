@@ -97,7 +97,7 @@ def evaluate_model(model_path, image_files, args, device_id, TW_Attraction):
         try:
             location_name = str(image_path).split('images/')[1].split('-')[0]
             all_choice = ', '.join(TW_Attraction)
-            question_with_choice = f"圖片中的景點是以下景點中那一個景點？{all_choice}。請只輸出景點名稱，不要輸出其他文字。"
+            question_with_choice = f"圖片中的景點是以下景點中那一個景點？以下是所有可能的景點，請從中選擇一個：{all_choice}。請只輸出景點名稱，不要輸出其他文字。"
             
             image = process_image(str(image_path))
             response = generate_text_from_image(
