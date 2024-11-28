@@ -80,7 +80,7 @@ def generate_text_from_image(
 ):
     """Generate text from an image using the model and processor."""
     # Combine system prompt and user prompt with image token
-    combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。分析景點時請先列出這個照片的細節，再推測這是那個景點。所有對話請用繁體中文進行。<|end_of_text|>
+    combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
 <|start_header_id|>user<|end_header_id|><|image|>{prompt_text}<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>"""
     
@@ -115,30 +115,19 @@ def generate_text_from_image(
     
     return response.strip()
 
-def create_markdown_report(results, output_path):
+def create_markdown_report(results, output_path, model_correct_count, base_correct_count, total_count):
     """Create a markdown report with images and responses."""
-    markdown_content = "# LLaMA Vision Model Evaluation Report\n\n"
+    markdown_content = f"""# LLaMA Vision Model Evaluation Report\n
+model correct: {model_correct_count} correct rate: {model_correct_count / total_count * 100: .2f}
+base correct: {base_correct_count} correct rate: {base_correct_count / total_count * 100: .2f}
+\n\n"""
     
     for (image_path, 
-        #  response, base_response, 
-        #  with_location_response, base_with_location_response, 
          question_with_choice, with_choice_response, base_with_location_response) in results:
         rel_image_path = os.path.relpath(image_path, start=os.path.dirname(output_path))
         markdown_content += f"## Image: {os.path.basename(image_path)}\n\n"
         markdown_content += f"![{os.path.basename(image_path)}]({rel_image_path})\n\n"
-        # markdown_content += "### Model Response Direct Ask:\n\n"
-        # markdown_content += "#### Answer with finetuned model:\n"
-        # markdown_content += f"{response}\n\n\n"
-        # markdown_content += "#### Answer with base model:\n"
-        # markdown_content += f"{base_response}\n\n\n"
-        # markdown_content += "### Model Response with Location:\n\n"
-        # markdown_content += "#### Answer with finetuned model:\n"
-        # markdown_content += f"{with_location_response}\n\n\n"
-        # markdown_content += "#### Answer with base model:\n"
-        # markdown_content += f"{base_with_location_response}\n\n\n"
-        markdown_content += "### Model Response with Choice:\n\n"
-        markdown_content += "#### Question:\n"
-        markdown_content += f"{question_with_choice}\n"
+        markdown_content += "### Model Response with Closed Words:\n\n"
         markdown_content += "#### Answer with finetuned model:\n"
         markdown_content += f"{with_choice_response}\n\n\n"
         markdown_content += "#### Answer with base model:\n"
@@ -162,51 +151,18 @@ def main():
     
     # Process each image
     results = []
-    question = "請問圖片中的景點是哪裡？景點有什麼特色？"
+    model_correct_count = 0
+    base_correct_count = 0
+    total_count = 0
     
     print("Processing images...")
     for image_path in tqdm(image_files):
         try:
             # Process one image at a time to manage memory
             location_name = str(image_path).split('images/')[1].split('-')[0]
-            question_with_location = f"圖片中的景點是{location_name}, 請告訴我關於這個景點的事情。"
-            multiple_choice = random.sample(TW_Attraction, 3)
-            multiple_choice.append(location_name)
-            random.shuffle(multiple_choice)
-            question_with_choice = f"圖片中的景點是哪裡？\nA. {multiple_choice[0]}\nB. {multiple_choice[1]}\nC. {multiple_choice[2]}\nD. {multiple_choice[3]}。請說明為什麼選擇這個景點以及這個景點的資訊"
+            all_choice = ', '.join(TW_Attraction)
+            question_with_choice = f"圖片中的景點是以下景點中那一個景點？{all_choice}。請只輸出景點名稱，不要輸出其他文字。"
             image = process_image(str(image_path))
-            # response = generate_text_from_image(
-            #     model=model, 
-            #     processor=processor, 
-            #     image=image, 
-            #     prompt_text=question,
-            #     temperature=args.temperature,
-            #     top_p=args.top_p
-            # )
-            # base_response = generate_text_from_image(
-            #     model=base_model, 
-            #     processor=processor, 
-            #     image=image, 
-            #     prompt_text=question,
-            #     temperature=args.temperature,
-            #     top_p=args.top_p
-            # )
-            # with_location_response = generate_text_from_image(
-            #     model=model, 
-            #     processor=processor, 
-            #     image=image, 
-            #     prompt_text=question_with_location,
-            #     temperature=args.temperature,
-            #     top_p=args.top_p
-            # )
-            # base_with_location_response = generate_text_from_image(
-            #     model=base_model, 
-            #     processor=processor, 
-            #     image=image, 
-            #     prompt_text=question_with_location,
-            #     temperature=args.temperature,
-            #     top_p=args.top_p
-            # )
             with_choice_response = generate_text_from_image(
                 model=model, 
                 processor=processor, 
@@ -223,9 +179,12 @@ def main():
                 temperature=args.temperature,
                 top_p=args.top_p
             )
+            if location_name in with_choice_response:
+                model_correct_count += 1
+            if location_name in with_choice_response:
+                base_correct_count += 1
+            total_count += 1
             results.append((str(image_path), 
-                            # response, base_response, 
-                            # with_location_response, base_with_location_response, 
                             question_with_choice, with_choice_response, base_with_choice_response))
             
             # Clear cache after each image
@@ -242,8 +201,8 @@ def main():
     
     # Generate report
     time_str = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-    output_path = output_dir / f'evaluation_report_{args.model}_{time_str}.md'
-    create_markdown_report(results, output_path)
+    output_path = output_dir / f'closed_word_evaluation_report_{args.model}_{time_str}.md'
+    create_markdown_report(results, output_path, model_correct_count, base_correct_count, total_count)
     print(f"Evaluation complete. Report saved to {output_path}")
 
 if __name__ == "__main__":
