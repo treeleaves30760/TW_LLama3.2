@@ -53,7 +53,7 @@ def generate_text_from_image(
     model, processor, image, prompt_text: str, temperature: float, top_p: float, device
 ):
     """Generate text from an image using the model and processor."""
-    combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
+    combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點，對於景點的資訊也十分清楚。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
 <|start_header_id|>user<|end_header_id|><|image|>{prompt_text}<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>"""
     
@@ -97,7 +97,7 @@ def evaluate_model(model_path, image_files, args, device_id, TW_Attraction):
         try:
             location_name = str(image_path).split('images/')[1].split('-')[0]
             all_choice = ', '.join(TW_Attraction)
-            question_with_choice = f"圖片中的景點是以下景點中那一個景點？以下是所有可能的景點，請從中選擇一個：{all_choice}。請只輸出景點名稱，不要輸出其他文字。"
+            question_with_choice = f"圖片中的景點是以下景點中那一個景點？以下是所有可能的景點，請從中選擇一個：{all_choice}。"
             
             image = process_image(str(image_path))
             response = generate_text_from_image(
