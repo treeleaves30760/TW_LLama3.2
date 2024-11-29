@@ -95,7 +95,7 @@ def evaluate_model(model_path, image_files, args, device_id, TW_Attraction):
     
     for image_path in tqdm(image_files, desc=f"Processing {os.path.basename(model_path)} on GPU {device_id}"):
         try:
-            location_name = str(image_path).split('images/')[1].split('-')[0]
+            location_name = str(image_path).split('Images/')[1].split('-')[0]
             all_choice = ', '.join(TW_Attraction)
             question_with_choice = f"圖片中的景點是哪裡?請問這個景點的資訊?以下是所有可能的景點：{all_choice}。"
             
@@ -154,7 +154,7 @@ def create_markdown_report(all_results, output_dir):
             f.write("## Detailed Results\n\n")
             for image_path, question, response in results:
                 rel_image_path = os.path.relpath(image_path, start=os.path.dirname(report_path))
-                ground_truth = str(image_path).split('images/')[1].split('-')[0]
+                ground_truth = str(image_path).split('Images/')[1].split('-')[0]
                 
                 f.write(f"### Image: {os.path.basename(image_path)}\n")
                 f.write(f"Ground Truth: {ground_truth}\n\n")
