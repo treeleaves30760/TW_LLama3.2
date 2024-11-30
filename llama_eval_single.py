@@ -28,7 +28,7 @@ def parse_args():
                       help='Path to the model directory')
     parser.add_argument('--num_gpus', type=int, default=8,
                       help='Number of GPUs to use')
-    parser.add_argument('--batch_size', type=int, default=2,
+    parser.add_argument('--batch_size', type=int, default=4,
                       help='Batch size for processing images per GPU')
     return parser.parse_args()
 
@@ -113,13 +113,14 @@ def generate_text_from_image_batch(model, processor, images, prompt_texts, tempe
         return ["Error processing batch"] * len(images)
 
 class GPUWorker(threading.Thread):
-    def __init__(self, gpu_id, model_path, args, task_queue, result_queue):
+    def __init__(self, gpu_id, model_path, args, task_queue, result_queue, progress_queue):
         super().__init__()
         self.gpu_id = gpu_id
         self.model_path = model_path
         self.args = args
         self.task_queue = task_queue
         self.result_queue = result_queue
+        self.progress_queue = progress_queue
         self.device = f'cuda:{gpu_id}'
 
     def run(self):
@@ -169,12 +170,14 @@ class GPUWorker(threading.Thread):
                     torch.cuda.empty_cache()
                     
                     # Update progress
+                    self.progress_queue.put(len(batch_files))
                     self.task_queue.task_done()
                     
                 except queue.Empty:
                     break
                 except Exception as e:
                     print(f"Error processing batch on GPU {self.gpu_id}: {str(e)}")
+                    self.progress_queue.put(0)  # Still update progress even if there's an error
                     self.task_queue.task_done()
                     continue
             
@@ -225,6 +228,17 @@ def create_markdown_report(all_results, model_name, output_dir):
             f.write("Correct: " + ("✓" if ground_truth in response else "✗") + "\n\n")
             f.write("---\n\n")
 
+def progress_updater(total_images, progress_queue, pbar):
+    """Update the progress bar based on completed images."""
+    completed = 0
+    while completed < total_images:
+        try:
+            n = progress_queue.get()
+            completed += n
+            pbar.update(n)
+        except queue.Empty:
+            continue
+
 def main():
     # Initialize
     load_dotenv()
@@ -240,9 +254,10 @@ def main():
     output_dir = Path('results')
     output_dir.mkdir(exist_ok=True)
     
-    # Set up queues for task distribution
+    # Set up queues for task distribution and progress tracking
     task_queue = queue.Queue()
     result_queue = queue.Queue()
+    progress_queue = queue.Queue()
     
     # Create batches
     num_gpus = min(args.num_gpus, torch.cuda.device_count())
@@ -263,16 +278,33 @@ def main():
     for _ in range(num_gpus):
         task_queue.put(None)
     
+    # Create progress bar
+    total_images = len(image_files)
+    pbar = tqdm(total=total_images, desc="Processing images", unit="img")
+    
+    # Start progress updater thread
+    progress_thread = threading.Thread(
+        target=progress_updater,
+        args=(total_images, progress_queue, pbar)
+    )
+    progress_thread.start()
+    
     # Create and start GPU workers
     workers = []
     for gpu_id in range(num_gpus):
-        worker = GPUWorker(gpu_id, args.model_path, args, task_queue, result_queue)
+        worker = GPUWorker(gpu_id, args.model_path, args, task_queue, result_queue, progress_queue)
         worker.start()
         workers.append(worker)
     
     # Wait for all workers to complete
     for worker in workers:
         worker.join()
+    
+    # Wait for progress updater to complete
+    progress_thread.join()
+    
+    # Close progress bar
+    pbar.close()
     
     # Collect results
     all_results = []
