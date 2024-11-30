@@ -42,11 +42,12 @@ def load_model_and_processor(model_path, device):
     processor = MllamaProcessor.from_pretrained(
         model_path, 
         use_safetensors=True,
-        padding_side='left'
+        padding_side='left'  # 確保左側padding
     )
     
+    # 將模型設置為評估模式並移至指定設備
+    model = model.eval()
     model = model.to(device)
-    model = model.to(torch.bfloat16)
     
     return model, processor
 
@@ -96,10 +97,8 @@ def generate_text_from_image(
     
     return response.strip()
 
-def generate_text_from_image_batch(
-    model, processor, images, prompt_texts: list, temperature: float, top_p: float, device
-):
-    """Generate text from a batch of images using the model and processor."""
+def process_inputs(processor, images, prompt_texts, device):
+    """預處理輸入數據"""
     combined_prompts = []
     for prompt_text in prompt_texts:
         combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
@@ -107,43 +106,62 @@ def generate_text_from_image_batch(
 <|start_header_id|>assistant<|end_header_id|>"""
         combined_prompts.append(combined_prompt)
     
+    inputs = processor(
+        text=combined_prompts,
+        images=images,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        add_special_tokens=False
+    )
+    
+    # 確保正確的數據類型
+    processed_inputs = {}
+    for k, v in inputs.items():
+        if isinstance(v, torch.Tensor):
+            if k in ['input_ids', 'attention_mask']:
+                processed_inputs[k] = v.to(device, dtype=torch.long)
+            else:
+                processed_inputs[k] = v.to(device, dtype=torch.bfloat16)
+        else:
+            processed_inputs[k] = v
+            
+    return processed_inputs
+
+@torch.no_grad()  # 使用裝飾器確保不計算梯度
+def generate_text_from_image_batch(
+    model, processor, images, prompt_texts: list, temperature: float, top_p: float, device
+):
+    """Generate text from a batch of images using the model and processor."""
     try:
-        inputs = processor(
-            text=combined_prompts,
-            images=images,
-            return_tensors="pt",
-            padding=True,
-            truncation=True,
-            add_special_tokens=False
+        # 預處理輸入
+        inputs = process_inputs(processor, images, prompt_texts, device)
+        
+        # 生成文本
+        outputs = model.generate(
+            **inputs,
+            temperature=temperature,
+            top_p=top_p,
+            max_new_tokens=512,
+            do_sample=True,
+            use_cache=True,
+            num_logits_to_keep=1,
+            pad_token_id=processor.tokenizer.pad_token_id,
+            eos_token_id=processor.tokenizer.eos_token_id,
         )
-        
-        inputs = {
-            k: (v.to(device).to(torch.long) if k == 'input_ids' else 
-               v.to(device).to(torch.bfloat16) if isinstance(v, torch.Tensor) else v)
-            for k, v in inputs.items()
-        }
-        
-        with torch.inference_mode():
-            outputs = model.generate(
-                **inputs,
-                temperature=temperature,
-                top_p=top_p,
-                max_new_tokens=512,
-                do_sample=True,
-                use_cache=True,
-                num_logits_to_keep=1
-            )
         
         prompt_len = inputs['input_ids'].shape[1]
         generated_ids = outputs[:, prompt_len:]
-        responses = [processor.decode(ids, skip_special_tokens=True).strip() 
-                    for ids in generated_ids]
+        
+        # 批次解碼生成的文本
+        responses = processor.batch_decode(generated_ids, skip_special_tokens=True)
+        responses = [response.strip() for response in responses]
         
         return responses
         
-    except RuntimeError as e:
-        print(f"Error in batch processing: {str(e)}")
-        # 如果批處理失敗，回退到單張處理
+    except Exception as e:
+        print(f"Batch processing error: {str(e)}")
+        # 如果批次處理失敗，改用單張處理
         return [generate_text_from_image(
             model, processor, img, prompt, temperature, top_p, device
         ) for img, prompt in zip(images, prompt_texts)]
@@ -151,25 +169,31 @@ def generate_text_from_image_batch(
 def evaluate_model(model_path, image_files, args, device_id, TW_Attraction):
     """Evaluate a single model on all images using specified GPU."""
     device = f'cuda:{device_id}'
+    torch.cuda.set_device(device)
+    
+    # 載入模型和處理器
     model, processor = load_model_and_processor(model_path, device)
     
     results = []
     correct_count = 0
     total_count = 0
     
-    # 將圖片分成批次
+    # 優化批次大小
     batch_size = args.batch_size
-    for i in tqdm(range(0, len(image_files), batch_size), 
-                 desc=f"Processing {os.path.basename(model_path)} on GPU {device_id}"):
-        batch_files = image_files[i:i + batch_size]
-        location_names = [str(path).split('Images/')[1].split('-')[0] 
-                         for path in batch_files]
-        
+    
+    # 使用tqdm顯示進度
+    batches = [(image_files[i:i + batch_size], 
+                [str(path).split('Images/')[1].split('-')[0] for path in image_files[i:i + batch_size]])
+               for i in range(0, len(image_files), batch_size)]
+    
+    for batch_files, location_names in tqdm(batches, 
+                                          desc=f"Processing {os.path.basename(model_path)} on GPU {device_id}"):
         try:
-            all_choice = ', '.join(TW_Attraction)
+            # 處理圖片批次
+            images = process_images_batch([str(path) for path in batch_files])
             questions = [f"請問圖片中的景點是哪裡？景點有什麼特色？"] * len(batch_files)
             
-            images = process_images_batch([str(path) for path in batch_files])
+            # 生成回應
             responses = generate_text_from_image_batch(
                 model=model,
                 processor=processor,
@@ -180,12 +204,11 @@ def evaluate_model(model_path, image_files, args, device_id, TW_Attraction):
                 device=device
             )
             
-            for path, question, response, location_name in zip(
-                batch_files, questions, responses, location_names):
+            for path, response, location_name in zip(batch_files, responses, location_names):
                 if location_name in response:
                     correct_count += 1
                 total_count += 1
-                results.append((str(path), question, response))
+                results.append((str(path), questions[0], response))
             
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
