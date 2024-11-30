@@ -39,9 +39,12 @@ def load_model_and_processor(model_path, device):
         use_safetensors=True,
         device_map=device,
     )
-    processor = MllamaProcessor.from_pretrained(model_path, use_safetensors=True)
+    processor = MllamaProcessor.from_pretrained(
+        model_path, 
+        use_safetensors=True,
+        padding_side='left'
+    )
     
-    # 確保模型在正確的設備上並使用正確的數據類型
     model = model.to(device)
     model = model.to(torch.bfloat16)
     
@@ -114,9 +117,11 @@ def generate_text_from_image_batch(
             add_special_tokens=False
         )
         
-        # 確保所有張量使用相同的數據類型和設備
-        inputs = {k: v.to(device).to(torch.bfloat16) if isinstance(v, torch.Tensor) else v 
-                 for k, v in inputs.items()}
+        inputs = {
+            k: (v.to(device).to(torch.long) if k == 'input_ids' else 
+               v.to(device).to(torch.bfloat16) if isinstance(v, torch.Tensor) else v)
+            for k, v in inputs.items()
+        }
         
         with torch.inference_mode():
             outputs = model.generate(
