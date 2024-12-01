@@ -38,7 +38,6 @@ def load_model_and_processor(model_path, device):
     
     model = MllamaForConditionalGeneration.from_pretrained(
         model_path,
-        torch_dtype=torch.bfloat16,
         use_safetensors=True,
         device_map=device,
     )
