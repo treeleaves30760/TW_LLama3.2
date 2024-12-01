@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
-from torch.nn.parallel import DistributedDataParallel as DDP
 from accelerate import Accelerator
 from PIL import Image as PIL_Image
 from transformers import MllamaForConditionalGeneration, MllamaProcessor
@@ -17,6 +16,7 @@ import random
 import math
 import queue
 import threading
+import numpy as np
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -28,8 +28,6 @@ def parse_args():
                       help='Path to the model directory')
     parser.add_argument('--num_gpus', type=int, default=8,
                       help='Number of GPUs to use')
-    parser.add_argument('--batch_size', type=int, default=4,
-                      help='Batch size for processing images per GPU')
     return parser.parse_args()
 
 def load_model_and_processor(model_path, device):
@@ -38,6 +36,7 @@ def load_model_and_processor(model_path, device):
     
     model = MllamaForConditionalGeneration.from_pretrained(
         model_path,
+        torch_dtype=torch.bfloat16,
         use_safetensors=True,
         device_map=device,
     )
@@ -52,34 +51,28 @@ def load_model_and_processor(model_path, device):
     
     return model, processor
 
-def process_images_batch(image_paths: list) -> list:
-    """Open and convert a batch of images from the specified paths."""
-    images = []
-    for image_path in image_paths:
-        if not os.path.exists(image_path):
-            print(f"The image file '{image_path}' does not exist.")
-            continue
-        try:
-            with open(image_path, "rb") as f:
-                images.append(PIL_Image.open(f).convert("RGB"))
-        except Exception as e:
-            print(f"Error loading image {image_path}: {e}")
-            continue
-    return images
-
-def generate_text_from_image_batch(model, processor, images, prompt_texts, temperature, top_p, device):
-    """Generate text from a batch of images using the model and processor."""
+def process_single_image(image_path: str) -> PIL_Image.Image:
+    """Open and convert a single image from the specified path."""
+    if not os.path.exists(image_path):
+        print(f"The image file '{image_path}' does not exist.")
+        return None
     try:
-        combined_prompts = []
-        for prompt_text in prompt_texts:
-            combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
+        with open(image_path, "rb") as f:
+            return PIL_Image.open(f).convert("RGB")
+    except Exception as e:
+        print(f"Error loading image {image_path}: {e}")
+        return None
+
+def generate_text_from_image(model, processor, image, prompt_text, temperature, top_p, device):
+    """Generate text from a single image using the model and processor."""
+    try:
+        combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
 <|start_header_id|>user<|end_header_id|>{prompt_text}<|image|><|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>"""
-            combined_prompts.append(combined_prompt)
 
         inputs = processor(
-            text=combined_prompts,
-            images=images,
+            text=[combined_prompt],
+            images=[image],
             return_tensors="pt",
             padding=True,
             truncation=True,
@@ -103,24 +96,31 @@ def generate_text_from_image_batch(model, processor, images, prompt_texts, tempe
 
         prompt_len = inputs['input_ids'].shape[1]
         generated_ids = outputs[:, prompt_len:]
-        responses = processor.batch_decode(generated_ids, skip_special_tokens=True)
+        response = processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
         
-        return [response.strip() for response in responses]
+        return response.strip()
 
     except Exception as e:
-        print(f"Batch processing error on device {device}: {str(e)}")
-        return ["Error processing batch"] * len(images)
+        print(f"Image processing error on device {device}: {str(e)}")
+        return "Error processing image"
 
 class GPUWorker(threading.Thread):
-    def __init__(self, gpu_id, model_path, args, task_queue, result_queue, progress_queue):
+    def __init__(self, gpu_id, model_path, args, image_paths, result_queue):
         super().__init__()
         self.gpu_id = gpu_id
         self.model_path = model_path
         self.args = args
-        self.task_queue = task_queue
+        self.image_paths = image_paths  # List of images for this worker
         self.result_queue = result_queue
-        self.progress_queue = progress_queue
         self.device = f'cuda:{gpu_id}'
+        
+        # Create progress bar for this worker
+        self.pbar = tqdm(
+            total=len(image_paths),
+            desc=f"GPU {gpu_id}",
+            position=gpu_id,  # Position the progress bar
+            leave=True
+        )
 
     def run(self):
         try:
@@ -134,51 +134,45 @@ class GPUWorker(threading.Thread):
             correct_count = 0
             total_count = 0
             
-            while True:
+            # Process each image assigned to this worker
+            for image_path in self.image_paths:
                 try:
-                    # Get batch of images from queue
-                    batch = self.task_queue.get_nowait()
-                    if batch is None:  # Sentinel value to stop the worker
-                        break
-                        
-                    batch_files, location_names = batch
-                    
-                    # Process batch
-                    images = process_images_batch([str(path) for path in batch_files])
-                    questions = ["請問圖片中的景點是哪裡？景點有什麼特色？"] * len(batch_files)
-                    
-                    if images:  # Only process if we have valid images
-                        responses = generate_text_from_image_batch(
+                    image = process_single_image(str(image_path))
+                    if image:
+                        question = "請問圖片中的景點是哪裡？景點有什麼特色？"
+                        response = generate_text_from_image(
                             model=model,
                             processor=processor,
-                            images=images,
-                            prompt_texts=questions,
+                            image=image,
+                            prompt_text=question,
                             temperature=self.args.temperature,
                             top_p=self.args.top_p,
                             device=self.device
                         )
                         
-                        # Process results
-                        for path, response, location_name in zip(batch_files, responses, location_names):
-                            if location_name in response:
-                                correct_count += 1
-                            total_count += 1
-                            results.append((str(path), questions[0], response))
+                        # Get ground truth from image path
+                        location_name = str(image_path).split('Images/')[1].split('-')[0]
+                        
+                        # Check if correct
+                        if location_name in response:
+                            correct_count += 1
+                        total_count += 1
+                        
+                        # Store result
+                        results.append((str(image_path), question, response))
                     
-                    # Clear CUDA cache
+                    # Update progress bar
+                    self.pbar.update(1)
+                    
+                    # Clear CUDA cache after each image
                     torch.cuda.empty_cache()
                     
-                    # Update progress
-                    self.progress_queue.put(len(batch_files))
-                    self.task_queue.task_done()
-                    
-                except queue.Empty:
-                    break
                 except Exception as e:
-                    print(f"Error processing batch on GPU {self.gpu_id}: {str(e)}")
-                    self.progress_queue.put(0)  # Still update progress even if there's an error
-                    self.task_queue.task_done()
+                    print(f"Error processing image on GPU {self.gpu_id}: {str(e)}")
                     continue
+            
+            # Close progress bar
+            self.pbar.close()
             
             # Send results back
             self.result_queue.put((results, correct_count, total_count))
@@ -186,6 +180,7 @@ class GPUWorker(threading.Thread):
         except Exception as e:
             print(f"Worker error on GPU {self.gpu_id}: {str(e)}")
             self.result_queue.put(([], 0, 0))
+            self.pbar.close()
 
 def create_markdown_report(all_results, model_name, output_dir):
     """Create evaluation report for the model."""
@@ -227,17 +222,6 @@ def create_markdown_report(all_results, model_name, output_dir):
             f.write("Correct: " + ("✓" if ground_truth in response else "✗") + "\n\n")
             f.write("---\n\n")
 
-def progress_updater(total_images, progress_queue, pbar):
-    """Update the progress bar based on completed images."""
-    completed = 0
-    while completed < total_images:
-        try:
-            n = progress_queue.get()
-            completed += n
-            pbar.update(n)
-        except queue.Empty:
-            continue
-
 def main():
     # Initialize
     load_dotenv()
@@ -253,45 +237,42 @@ def main():
     output_dir = Path('results')
     output_dir.mkdir(exist_ok=True)
     
-    # Set up queues for task distribution and progress tracking
-    task_queue = queue.Queue()
+    # Set up result queue
     result_queue = queue.Queue()
-    progress_queue = queue.Queue()
     
-    # Create batches
+    # Determine number of GPUs to use
     num_gpus = min(args.num_gpus, torch.cuda.device_count())
-    batch_size = args.batch_size
     
-    # Create all batches first
-    all_batches = []
-    for i in range(0, len(image_files), batch_size):
-        batch_files = image_files[i:i + batch_size]
-        location_names = [str(path).split('Images/')[1].split('-')[0] for path in batch_files]
-        all_batches.append((batch_files, location_names))
+    # Distribute images among GPUs
+    images_per_gpu = len(image_files) // num_gpus
+    remainder = len(image_files) % num_gpus
     
-    # Put all batches in the task queue
-    for batch in all_batches:
-        task_queue.put(batch)
+    # Split image files among GPUs
+    gpu_image_lists = []
+    start_idx = 0
+    for i in range(num_gpus):
+        # Add one more image to some GPUs if there's a remainder
+        current_chunk = images_per_gpu + (1 if i < remainder else 0)
+        end_idx = start_idx + current_chunk
+        gpu_image_lists.append(image_files[start_idx:end_idx])
+        start_idx = end_idx
     
-    # Add sentinel values to stop workers
-    for _ in range(num_gpus):
-        task_queue.put(None)
-    
-    # Create progress bar
-    total_images = len(image_files)
-    pbar = tqdm(total=total_images, desc="Processing images", unit="img")
-    
-    # Start progress updater thread
-    progress_thread = threading.Thread(
-        target=progress_updater,
-        args=(total_images, progress_queue, pbar)
-    )
-    progress_thread.start()
+    print(f"\nStarting evaluation with {num_gpus} GPUs")
+    print(f"Total images: {len(image_files)}")
+    for i in range(num_gpus):
+        print(f"GPU {i}: {len(gpu_image_lists[i])} images")
+    print("\n")
     
     # Create and start GPU workers
     workers = []
     for gpu_id in range(num_gpus):
-        worker = GPUWorker(gpu_id, args.model_path, args, task_queue, result_queue, progress_queue)
+        worker = GPUWorker(
+            gpu_id=gpu_id,
+            model_path=args.model_path,
+            args=args,
+            image_paths=gpu_image_lists[gpu_id],
+            result_queue=result_queue
+        )
         worker.start()
         workers.append(worker)
     
@@ -299,11 +280,8 @@ def main():
     for worker in workers:
         worker.join()
     
-    # Wait for progress updater to complete
-    progress_thread.join()
-    
-    # Close progress bar
-    pbar.close()
+    # Move cursor past progress bars
+    print("\n" * (num_gpus + 1))
     
     # Collect results
     all_results = []
