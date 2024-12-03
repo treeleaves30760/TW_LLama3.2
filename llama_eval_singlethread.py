@@ -119,7 +119,7 @@ def evaluate_folder(args):
         try:
             image = process_single_image(str(image_path))
             if image:
-                question = "請問圖片中的景點是哪裡？景點有什麼特色？"
+                question = "請問圖片中的景點是哪裡？"
                 response = generate_text_from_image(
                     model=model,
                     processor=processor,
