@@ -1,0 +1,862 @@
+{
+  "folder": "folder_3",
+  "gpu_id": 2,
+  "results": [
+    {
+      "image_path": "Distributed_Images/folder_3/國立清華大學-4.jpg",
+      "ground_truth": "國立清華大學",
+      "response": "台灣的校園觀景觀， Angeles形狀優美的花�子，沒有明顯的遊客表明這裡的元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣師範大學-1.jpg",
+      "ground_truth": "國立臺灣師範大學",
+      "response": "背景建築的校園建築，則可能是與校園的主要景觀，則是校園的建築特色，.log\n總結和建築的細�凝條條塊和植�圍的材料和明顯的氣�圍，將是與歷史的學習或藝術氛圍。此外，建議參觀時尚或活動團以獲得更深的解說或地遊�門的參觀！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣大學-4.jpg",
+      "ground_truth": "國立台灣大學",
+      "response": "台灣建築的建築和周圍環境顯得明靜與白色調，提供良好的氛圍和自然景景氣而成。周圍環境都有明顯的建築和設計元素，.log何細修剪整�凝土，將有明顯的細護和藝術氛圍。\n\n從這些細節來說，這裡是學習的戶外空間或藝術活動，.log所過所有的好地方，://周圍有植�邊的綠地和植�遭的植�邊和植�邊的綠樹和植被作有相對的人作為參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁白沙灣-2.jpg",
+      "ground_truth": "墾丁白沙灣",
+      "response": "點眾顯得， acids浪漫的氛圍。在雲層過，://周圍環境良好，://輪門上有些浪�色和浪漫的浪氣，顯得相接的靜力氣，可能是受歡迎的氣�圍或受歡迎的遊�丁員們堬擊公艇或活動的遊玩。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/士林夜市-2.jpg",
+      "ground_truth": "士林夜市",
+      "response": "台灣的攤位和商品，這應對於台灣的台灣的攤位和攵膐的產品攤omerT\n如果要確定的計劃參觀過會更有明顯的細節或表明明攤販的攤販或攤位的景色。如果需要確認實的遊客，也可以選購的街道都能提供進行攤販的景色或獨特的景色。遊客也可以確定這個攤販的攤販攤販，這樣能確保對於當地的魷士攞。遊客應該可以選擇參觀的參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣海洋大學-1.jpg",
+      "ground_truth": "國立臺灣海洋大學",
+      "response": "遊觀台的建築細節和自然景觀的建築與設計，該地點應有明顯的自然景景元素或環境。\n3裡面較為透明的建築和周圍的環境相對強射明浪之和活動而成，將會是一次難錯的遊與校園域。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣大學-5.jpg",
+      "ground_truth": "國立台灣大學",
+      "response": "台灣的入口細誌性建築，://門門門上顯示這個自然景觀的自然景氣。周圍的環境明顯明明建築和明顯的建築設計，顯示這個景觀與歷史建築的校園設計。周圍還有明顯的樹葉與建築細膷和植�圍，將有明細而受年趣的氛圍！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣美術館-2.jpg",
+      "ground_truth": "國立臺灣美術館",
+      "response": "點展現的是藝術作品的建築，將會充實的公共空次和明顯的藝術氛圍。\n\n周圍環境還有明明明明適的公共空間，營造充足的藝術氛圍及藝術裝置的景色，會讓參觀更加豐富的氣�圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立故宮博物院-5.jpg",
+      "ground_truth": "國立故宮博物院",
+      "response": "台灣的設計與自然景觀的環境而明顯的建築和景觀，這是建築的歷史和歷史建築或設施。周圍的植�圍廣場，無障引遊的參觀細膐，.log有明顯的建築與設置介紹的莊況。周圍有植�圍的植�圍和植�圍，與整個景色相對整�凝土和植�圍的景色，配合整體而言。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立公共資訊圖書館-5.jpg",
+      "ground_truth": "國立公共資訊圖書館",
+      "response": "台南的公共空間，為參觀的廣場設計和建築的廣場，.swing上有廣場的樹葉和植�圍圍，配合藝術作品的好氛圍。\n3裡面�邊緷�整條條��遭的建築與空間，這些都是自然自然的自然景景觀，適合戶外的參觀。此外， versaB 00and\n如果要確定。如果有確對於計劃參拜的細�凝條塑�道和明顯的工作坊或者參觀經融行。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣藝術大學-1.jpg",
+      "ground_truth": "國立臺灣藝術大學",
+      "response": "點綴著多層的燈光和燈光，- 建築的設計簡�效果，建材，://築作時分融合對整理參觀的圖片中都充足。\n\n如果需要確定\n\n對於計劃參加館內的細細細節或設施名稱，://30時期明顯的設計和建築的戶外景色都相對紏於公共空間的公共行走與景點，://周圍有綠地，://如果需要更深入地體會將有助於選- ��圍的空景作/\n4:00:00/:00:30- B:00\n3說明院\n如果要確定， able年到建築\n如果你說對館\n4次參觀經實明明明明明明明明明地明顯的空間作開-說明B- 是否有興趣的遊- �途\n如果對宜蘭\n5owered說明\n如果需要查看參觀\n如果有更多的話-如果還可以提- 時-Wheel\n如果有所說-如果有興趣- 結-都共同設施-對於於金門/D院\n5anel-604院\n4希望對於園區\n如果有興趣- 時545. 結--300-00:16:00- �憶\n如果有更多avar:B- �大利公車\n5時成為20說-如果有興趣-AM-3013讀/- 敶\n如果有趣- �髶\n4anel- :00- 確--:- 明細--:- ��末--明細-結-agli\n5時askan說明- 周圍-elmanAR\n如果是5- 碶-:- 確---ond-AM\n- � 說明\n- \n如果要查看地震的選--:--сь----aly:--:--aly:--omatic\n如果能共同參觀明顯的交通---AM--ond-~- 碇\n- \n- \n- 地質設計\n- \n- 旁----Of:-AM-SCALE-\n- \n- 在參觀儀----aly--aly",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立自然科學博物館-2.jpg",
+      "ground_truth": "國立自然科學博物館",
+      "response": "對於想參觀臺中的遊客， 參觀，參觀圖 對顯細細細細細條細條，這會是國立臺灣藝術的文化氣息！台的主要建築和建築細細明建築，://週圍的景色都適合散步和家庭的朋友，://周圍的景色優雅和設計！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立中山大學-3.jpg",
+      "ground_truth": "國立中山大學",
+      "response": "圖片中的建築設計和建築的建築設計和樹木和植�圍的建築，與周圍的自然景氣而明絷和自然景氣。周圍環境的植�圍和植�圍的建築設計，適合家庭或參觀的戶外或其他景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/士林夜市-3.jpg",
+      "ground_truth": "士林夜市",
+      "response": "點紅燞、攤販，才能確定這是台灣的攤販和攤販的攬絡。\n對於想要參觀於台灣的攤位或細節，營造以規劃的熱鬧�圍和收�邊的攤販和攬明顯的攤位和活力。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立故宮博物院-3.jpg",
+      "ground_truth": "國立故宮博物院",
+      "response": "台灣的觀景觀與周圍的自然環境，將是一個景觀的自然景景區，將有明細的細膔�額。\n\n如果需要確認這是位於台灣的歷史建築，://對於了解國立故宮邶和文化意義的魷爬和明顯的景色和明護的景色。在參觀時期，建議查詢當地的悠久規定或講座或參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立交通大學-3.jpg",
+      "ground_truth": "國立交通大學",
+      "response": "宜人以參觀的遊觀眾空景與自然景觀的色調和氣�圍，提供遊艇的氛圍與藝術元素。這場地可能是周圍的公共空間或設條件來說。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立中央大學-5.jpg",
+      "ground_truth": "國立中央大學",
+      "response": "點的建築，://對於於於校園或校園的藝術氣�圍和明顯的氛圍。建築風格相是明顯的戶外景景色相條而過，則需要參觀的參觀或特別對讀的遊或圖像。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/壽山動物園-1.jpg",
+      "ground_truth": "壽山動物園",
+      "response": "點著遵動的戶外風格，.log 說明都有更多的元素，.log\n如果需要確定，://參觀於園區的遊玩樂設施，- 畫面顯示出這是一個遊玩的遊玩與設施， Angeles形勢優雅的趣味元素。此",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立公共資訊圖書館-4.jpg",
+      "ground_truth": "國立公共資訊圖書館",
+      "response": "顯示的建築設計與建築的環境，.log 這個自然景觀明著的設計和設計，明顯明明燈光明顯的設計。周圍有綠地和樹木效果的植�圍，為戶外戶外戶外空間，強調明明建築細層的效果。如果還能確定這個景點名稱，://周圍景色相調明勢，://周圍環境優雅的效果相對相��邊的人條條條條條條，.swingleA\n如果你計劃參加導- \"-B30層次的人成成就，://參拜的建築細品味與設施的細細條效果相對錯過，://週邊的綠地效果，://如果你查看明確的細障條次！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣圖書館-3.jpg",
+      "ground_truth": "國立臺灣圖書館",
+      "response": "點公共圖：可以看到室內的設計和自然環境，配合顯示了與圖案的設計與特別明顯的設計氛圍。\n\n由於圖中有所明顯的圖 的細節或地點都會更加明顯的室域和設計。參觀時可以查詢當地的圖\n如果有更多的圖書館或設施的圖書館，://進一步確認，這樣可以確定期對於圖 年時期的遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立宜蘭大學-4.jpg",
+      "ground_truth": "國立宜蘭大學",
+      "response": "台灣的運動場或明顯的建築設計和遊玩的設計中結構。周圍有綠色植物，沒有明顯的細�構成。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/大坌坑遺址-1.jpg",
+      "ground_truth": "大坌坑遺址",
+      "response": "點明顯的細節來說，這應對於位於台的歷史景區的背景，這是其他景觀過去的自然景氣。故轉過參觀的歷史背景和文化意義，這是位於重要的古城或受歡迎的景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/圓滿戶外劇場-4.jpg",
+      "ground_truth": "圓滿戶外劇場",
+      "response": "於建築的周圍環境中都充實，可能是戶外的公共空間或遊玩的公共空間。周圍的環境也明顯有建築風格的自然景景建築和植�圍。台部設計優調，將受當地的景色來說，這將是不錯的設計與藝術裝置。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣文學館-5.jpg",
+      "ground_truth": "國立台灣文學館",
+      "response": "背景還有明明的建築風格，將有更明明明古書院或明顯的展廳和景觀。參觀時需要對訪問或講條或建築的圖片。\n\n如果你計劃參觀經常會對館的參觀應該還有意義的建築細細節和明顯的景觀，://周圍環境優美，://如果有更多的人勷結構，-old條條條條條條相對明淨！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣師範大學-5.jpg",
+      "ground_truth": "國立臺灣師範大學",
+      "response": "點有細節的建築和建築的建築與建築，將有明顯的運動空球和建築，方便參觀的空氣。參觀時查詢學校的活動或工作坊或講座，需能錯過的參觀或參拜行或展�圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/基隆廟口夜市-5.jpg",
+      "ground_truth": "基隆廟口夜市",
+      "response": "點忙各類的攤販，才能顯過。如果還有更多的攤販或攤販的攤販和攤販，顯示這是一個非常熱鬧的�圍和攤販。在週圍也有多元的攤販，方便遊客購的攤販和攤位等，將有受歡珠或廟的攤販和熱鬧�圍。\n\n由於以上都是確認這個地點的經驗確認，這樣能提供更多的細膥的裝飾性和細膷�的熱鬧氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁白沙灣-5.jpg",
+      "ground_truth": "墾丁白沙灣",
+      "response": "於墾丁的水域， Angeles邊�繞著水上的色調良好，則符合宜蘭的自然景氣氣�圍或�域浪性氣狀。\n\n如果需要確定會有計劃，://如果需要確定\n\n對於想參觀於計劃行行， 如果需要受歡迎的遊玩旺季，://如果要確認試參觀於宜蘭的遊�丁或攬射。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立政治大學-3.jpg",
+      "ground_truth": "國立政治大學",
+      "response": "點圖：的建築細節都適合散步和明顯的氛圍與建築，會有明顯的廣場和表明明明明明明明明建築的運動，://周圍有植�圍的綠色植�圍和植�圍圍過，顯示是該校的遊樂設施。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立交通大學-4.jpg",
+      "ground_truth": "國立交通大學",
+      "response": "點圖中還有一個現代的建築和建築，這是校園的藝術建築或景觀來說，成為參觀的藝術氛圍。這個景觀都有明顯的樹木和植�圍，這些都是當地的自然景景觀，並有建築設計作的人。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣海洋大學-5.jpg",
+      "ground_truth": "國立臺灣海洋大學",
+      "response": "點建築的建築風格，明顯的建築和建築細節的設計相要都相對的景色。\n\n如果還能確定地點參觀的圖中顯示，這是一個參觀的學術氛圍或景觀的景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣博物館-4.jpg",
+      "ground_truth": "國立台灣博物館",
+      "response": "顯示的是公共公共空間的建築，成為現的自然景景廣場。此外，://週圍的自然景觀與設施中有趣，.swing案子都相對充實而整�凝塑塑塑材質和植�圍的建築和融定氣�圍。\n\n如果你計劃參觀於周圍的建築細節或細細剪成，會更深入地參觀。此參觀周圍的自然景氣或講座，將是參觀經過參觀行程。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺北大學-5.jpg",
+      "ground_truth": "國立臺北大學",
+      "response": "點燈或明顯的建築，會有更深的建築和藝術裝飾，將是一次參觀的學院或圖片。\n\n由於這些明顯的建築細節和設有明顯的設計與表明比較明顯的校園或重要地建築。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣博物館-3.jpg",
+      "ground_truth": "國立台灣博物館",
+      "response": "點平靜，:// 周圍環境良謐的氛圍，將有參觀的細牌�額和簡暖的氣�圍。\n\n參觀傳統的中國建築細節，這個建築結構的設計都可能是重要的建築或文化背景。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立政治大學-1.jpg",
+      "ground_truth": "國立政治大學",
+      "response": "點圖片中的細節看來，這是位於學習的校園的景觀和自然景觀。如果需要參觀或細細細節的遊樂圖像，會有參與的校園與藝術元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立中山大學-4.jpg",
+      "ground_truth": "國立中山大學",
+      "response": "點的建築細節和建築細節來確確定。周圍的建築細膐，.log�邊還有明顯的樹葉和植物，強調建築與自然環境的細�陵。周圍還有明明建築的植�邊景景與建築，提供明顯的自然氣�圍。\n\n周圍環境正面的植�圍和植�圍，會有更多資源與展示的元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣海洋大學-2.jpg",
+      "ground_truth": "國立臺灣海洋大學",
+      "response": "點高雄的建築的環境，這是位於大學的校園或公場的校園建築，則是校園或自然景觀，將有與自然景氣而明明明明明明建築或地點。如果有對圖書館的確定，這是學習的圖中都有建築的景觀和自然景色。\n\n如果您有其他明顯的細節或參觀的圖書館，://由於這個元素明顯的明靈地建築和設計的設計，://參觀時可以參觀校內的導覽或設施也可能是適合拍照的工作.如果有更多圖像或需要更多的地標或設施！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立中山大學-5.jpg",
+      "ground_truth": "國立中山大學",
+      "response": "點��邊的建築設計和建築的特色，這樣可以確認具體的建築風格。\n\n如果有其他圖片或明顯的明顯圖中應該提供參觀的圖�邊建築或建築細節，://周圍環境還有明顯的綠地和植�邊的綠色植�邊等景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/士林夜市-4.jpg",
+      "ground_truth": "士林夜市",
+      "response": "台灣的攤販攤販和攤販的攤販，顯示這個攤販攬明明明明。\n\n如果需要確認這裡的攤販或攤販攤\n3裡販熱鬧的攤販和攤販，營造出熱鬧的氛圍。\n3裡上也有明顯的攤販，這些都是非常受歡迎的選購的樣作節。\n3裡面的攤位都有攞�圍的裝飾和攤位，.log 如果有更多細細�門的攬晚或攤位，:\\/\\/攤位也明顯的熱鬧氛圍。\n\n如果你有更多的細節或明顯的細節， often能更深入地理解這個地經歷的熱鬧地參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/埔里酒廠-4.jpg",
+      "ground_truth": "埔里酒廠",
+      "response": "台灣的傳統文化建築和建築的風格，會讓參觀的遊玩過去，會有更多的元素或景點。參觀時明顯的文化氣息或明顯的文化意義，://周圍的景色都會遊客，這樣可以錯過過過場地。如果需要確定或需要參觀行用體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺北大學-2.jpg",
+      "ground_truth": "國立臺北大學",
+      "response": "點明建築的建築和建築，則有明顯的建築與建築和圖書館設計，這樣的圖中都是明顯的公共空間。\n\n如果需要提供參觀校園的參觀，://如果需要了解校園的公開或明智的參觀的細節，://週圍有植�圍的樹葉和植�圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣科技大學-3.jpg",
+      "ground_truth": "國立臺灣科技大學",
+      "response": "背景還有明顯的公共建築， Angeles形狀的結構和畫作與設計而整�凝土等。周圍環境也充入明明明明明細，://周圍景色都都是藝術作品的好景氣與畫面。周圍有植�圍的綠地和樹葉和植�圍，會有更多的植�圍以及建築和周圍環境也相相錯的遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/大坌坑遺址-3.jpg",
+      "ground_truth": "大坌坑遺址",
+      "response": "圖片中的建築細節來說，這是一個景色顯得較深和植�圍的植球圍葉，仍難以確認這是一個自然景觀或景點的景色。參觀於台東的自然景觀或景色都都適合散步或行走。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/壽山動物園-3.jpg",
+      "ground_truth": "壽山動物園",
+      "response": "點建築是台灣的自然景觀，可能會有遊玩的表明建築或參觀圖像。\n\n如果還有其他明顯的遊客，://對於遊客參觀過興趣的遊客， suggesting說明這座公園的參觀更豔的建築與設施。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣師範大學-2.jpg",
+      "ground_truth": "國立臺灣師範大學",
+      "response": "點參觀國立臺灣藝術的校園設計，顯示這是一個靈性而強明明建築的景色。周圍有明類的表明圖案和表明明明顯的自然景氣！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣藝術大學-5.jpg",
+      "ground_truth": "國立臺灣藝術大學",
+      "response": "點建築的建築和建築風格來看，這個建築的設計與自然景觀相結構的圖案。\n\n如果您計劃參觀於圖片中的建築的圖�邊建築中都有明顯的公共空間或展現的設施。如果需要對參觀的細細條或活動，.swing的遊客能更深入地體驗當地的藝術氛圍和建築的自然景景效果。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立金門大學-2.jpg",
+      "ground_truth": "國立金門大學",
+      "response": "台灣的國立台灣大學的建築，將有適合的建築和設計和景觀會有明顯的燈光和細�凝塑，將有明顯的戶外結構和建築，.log B邊有明年的公共空浪燇， Angelesip”條條條紋，與學生成對成就的藝術氛圍。因此，參加當地的自然景氣或設條，將有助於更深入地參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/壽山動物園-2.jpg",
+      "ground_truth": "壽山動物園",
+      "response": "台灣的動物園細節和動物的動態景觀，這樣的設計和建築的自然景景區和植�圍都會。\n從園區周圍的環境會都有更明顯的景觀和動態性，這樣不僅有明顯的自然景觀和動物的空生氣。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/壽山動物園-5.jpg",
+      "ground_truth": "壽山動物園",
+      "response": "點動物的景色和自然景觀，才能參觀過或參觀的遊玩或資訊或區域參觀。此外， ableBD世界作對於朋友參觀或參觀體驗。參觀行費說項或參觀行以規定或參觀圖中有更深入的遊玩。如果有細�圍或景觀！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立宜蘭大學-3.jpg",
+      "ground_truth": "國立宜蘭大學",
+      "response": "點建築的校園設計是建築的環境，.log 30處學院的建築設計，將是一個地點的開放和融入的元素。因此，無費明明明的畫條條條條條，可能是校園的� B側面的�線條，營造明顯的氛圍與自然景景都都充足的自然景景。周圍有綠地和植被，.Forms在整條上往往都有明顯的自然景氣。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣博物館-2.jpg",
+      "ground_truth": "國立台灣博物館",
+      "response": "台灣的建築細節和設計有明明明建築的設計和設計，對於參觀的參觀或講解地點，歡迎對館內的展品或表演的話，也可以選擇參觀的細�凝花膷和裝飾結構。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣科技大學-4.jpg",
+      "ground_truth": "國立臺灣科技大學",
+      "response": "台灣的國立臺灣藝術裝飾，- 確薄明明明明明整浮窗，成為現代的工業風格。\n3明細細條條條條條條條條條，可能是學校的公共空景或建築的自然景觀。\n3松樓的設計風格相符合符合這裡的自然景觀和建築細細自然的戶外景細細條。\n3次的建築細細細條條條條條條，這是建築的建築細節都相對明顯的建築。由於僅由於周圍的樹葉明亮而明明明明整明剛調期。如果有更多細細條或建築細細植物的人能更深入地確認。如果有更多地標或地參觀，\n如果需要參觀經明確的細細期！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣歷史博物館-1.jpg",
+      "ground_truth": "國立臺灣歷史博物館",
+      "response": "於圖片中的細節，.log 說明，這確是宜蘭的自然與自然景觀或參觀的景點或自然景觀，將是一次參觀的參觀體驗或自然景氣。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣圖書館-1.jpg",
+      "ground_truth": "國立臺灣圖書館",
+      "response": "宜蘭的建築風格與建築，方便又遊客。此外， respected年朋友的重要性或地點，這裡顯得明明明建築與自然景觀。由於僅年正圖�邊的設計設計與參觀的好地方。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/埔里酒廠-3.jpg",
+      "ground_truth": "埔里酒廠",
+      "response": "台灣的台灣的傳統車仔絡場的入口。周圍有明顯的圖片和車廠，.FormsAand，建以歷會過入等而言，這樣能夠確定這裡會有明顯的�花��邊設計。周圍還有明熱鬧的商品和傳統裝飾，-old上還有植�邊的裝飾，這將是遊客參觀的選擇。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/大坌坑遺址-5.jpg",
+      "ground_truth": "大坌坑遺址",
+      "response": "點細節還是高雄的公園景景設計和景色來訪，這是一個景觀的視景點。周圍有明顯的綠色植被和周圍景色相成的明勢設計而呈現明美的氣�圍。因此，根據確適的圖中確認，://如果你需要確認地點，.swing工藝作過， own期說明明，這是觀賞自然景觀的景景景景作作表明相錯的景空景作理作而成。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/基隆廟口夜市-1.jpg",
+      "ground_truth": "基隆廟口夜市",
+      "response": "台灣的招牌和周圍的燁次結構，顯示出這是一個受歡迎的氛圍和購物和攤販攞的招牌，方便遊客選擇遊客相對洶林攞。\n5確定實會實際的氛圍！如果需要確認有更多的細節或細節，這樣能更深入地理解這個地熱的繁忙地標。如果有更多圖ungungC上攤販的景色或會有明顯的熱鬧氛圍。不過，參觀熱鬧的攤販或景色都能明顯程度的參觀體驗！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/基隆廟口夜市-3.jpg",
+      "ground_truth": "基隆廟口夜市",
+      "response": "眾多的攤位和攤位的攤位和餐食，這是攤位的攤中都有其他的攬花，會有明顯的攤omer膔肉等攤位。\n\n由於無法確定這裡需要確認，-old攤販都有攤販的攬花攤ang膐花，將有助於確認。如果要選購的攤中都會有更多的攬珠仔�邊攬有�邊的魷士和表明，這樣能以更深入地體會。如果有更多的參觀要查慞地遊客，購作當地的攤位和藝術氛圍！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣美術館-3.jpg",
+      "ground_truth": "國立臺灣美術館",
+      "response": "點綵的設計是自然景觀和自然景觀，顯示這個自然景觀的公共空間和藝術元素。\n對於遊客查看查閳條，://週圍的廣場或參觀的細細條細雅的建築細障條條條條條條條紋，這樣能相對對相對明靈性的好去期確認。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/圓滿戶外劇場-5.jpg",
+      "ground_truth": "圓滿戶外劇場",
+      "response": "台灣的燈光明亮的裝飾和燈光的燈光裝飾，這是燁的燧的燧球或樹木和節慶的氛圍，歡迎參觀或表演的活動或表演。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立交通大學-1.jpg",
+      "ground_truth": "國立交通大學",
+      "response": "台灣的藝術裝置和建築的建築，這裡顯得明明自然的元素，這是建築的建築設計的空氣和空層設計。周圍還有明明明明建築的建築細型建築與建築，成為當地的藝術氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/圓滿戶外劇場-1.jpg",
+      "ground_truth": "圓滿戶外劇場",
+      "response": "台灣的公共戶外戶外活動，:// 參觀眾參觀時期的活動，這樣可以參觀參觀的參觀體驗活動或設施會。周圍有明顯的設計與建築結構，://周圍環境還有公共資習的選擇。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣美術館-1.jpg",
+      "ground_truth": "國立臺灣美術館",
+      "response": "點建築的廣場和建築設計，這將是一個藝術作品的藝術作品與建築風格和裝飾的建築設計，彶條，://周圍景觀顯示出不錯的參觀參觀的細細浮結構和廣場設計。此外， AngelesalOYouor廳設計以其自然景氣和優雅的氣�圍和融好空擊的氛圍。\n\n如果需要確定\n\n如果您希望對參觀應對成為藝術中心的遊客，也可以參觀的經驗細細細童趣的公共資源以確保能深入了解每件藝術的作品和文化資源。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣博物館-1.jpg",
+      "ground_truth": "國立台灣博物館",
+      "response": "點建築的入口細節，://築作時期的外觀和植�圍的燈光和優雅的景觀，並對於參觀的參觀或參觀的參觀資料或明建築的官方資訊。此外，\n對於計劃參觀說會更深入的遊客，�Y結構都將適合參觀的解說與明明明與建築的設計作相說，這樣可以充分利用參觀的參觀體驗。參觀，參觀時也要對於參觀的經解說或參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立中央大學-4.jpg",
+      "ground_truth": "國立中央大學",
+      "response": "台灣的旗銗建築， Angeles門建築經常呈現相錯的自然景氣和氣�圍。\n3個景觀明顯顯示了當地的自然景色及自然氣息。\n3個景觀都會相對，這是重要的遊玩或周圍的自然景觀。如果有其他明顯的圖中都有顯明明建築細細條條或景色的細�陵建築。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立政治大學-5.jpg",
+      "ground_truth": "國立政治大學",
+      "response": "台灣的設計結構與建築，這類自然的建築細節與設計圖案，這應該是台灣的公共空景與建築，配合對於學習的遊客。如果有更多的圖書館或活動的圖中查看圖�邊的自然景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立金門大學-1.jpg",
+      "ground_truth": "國立金門大學",
+      "response": "對於想參觀的遊客，於校園的參觀計畫，.swing的建築細節都適的建築細膬結構與設計。如果有參觀行行行，://參觀周圍的自然景觀和景觀，也適- :00- 柱子和建築，://B 0:00- �金樓， believedB::::B - :  - - :00- :00- :::B::0- :0/::B:0說期明明明明明明明明明建築的�繞和明顯的明顯---302 4次地經過！參觀校\n5位訪- :30，參加導--:4anel\n5時期是與學校的藝術裝備-16:0- :- :0-B :B - :00::::B::----::--::B /::541--:541--:541-----:::-Year::541-Year-ahl-askan-541:如果于明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明地明�湖----------:-:-----::-::-:::::-::::-----:---------------:-216:-216--------------------------------------------------------:300 \n216 - gamble\nمول明世紀明 Hüs--:\n如果ignKey - felony-明世紀20----------------------:- felony- --------:16 - - - -",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/大坌坑遺址-2.jpg",
+      "ground_truth": "大坌坑遺址",
+      "response": "台灣的形狀形狀形狀的建築與自然景景景，與自然景觀也相對適的遊艇，://周圍還有一個自然的植被和植被，例如一個自然氣息和植物而自然景景元素。周圍還有植�遭的綠化與植�圍和植�圍的植被。周圍環境也有植�圍的綠化和植�圍和植�圍的植被，適合散步或參觀的遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣歷史博物館-3.jpg",
+      "ground_truth": "國立臺灣歷史博物館",
+      "response": "建築的設計風格和建築設計設計，://築作開放的外觀設計，展現當地的視覺變化。周圍有柱子，則可能是位於公共空間或展的環境中來說，這是公共參觀的重要講次或地點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/埔里酒廠-5.jpg",
+      "ground_truth": "埔里酒廠",
+      "response": "台灣的商店設計相適的設計和購物設計，才是一件參觀過或展現的設計。\n3說明的細節和明顯的設計細細條和建築材料和明顯的視覺效果。\n\n3說明這個裝置可能會是購物的空間和商品的建築，這會讓你的參觀體驗更加豐富。如果要確定，這裡明顯的建築或設施都會！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立故宮博物院-4.jpg",
+      "ground_truth": "國立故宮博物院",
+      "response": "台灣的台灣的觀景觀，將是一次參觀的參觀更加豐富的細�構成，確認是故宮殿的重要文化和文化氣息。參觀時期參觀參觀的導�圍作有細細�陵和結合的細�構成，並在周圍的綠地和自然景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立故宮博物院-1.jpg",
+      "ground_truth": "國立故宮博物院",
+      "response": "台灣的建築的建築細節和周圍的建築的景觀與特色而設的設計和優雅而富有細�質和表明明說明，這是每個展的設計和設計融入的自然景景。參觀時這樣的建築細細細�栽的建築和裝飾作融合的藝術作品，這些都是明顯的自然景觀與設施。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立清華大學-3.jpg",
+      "ground_truth": "國立清華大學",
+      "response": "象徵藝術的公共空中和自然景色，顯示這個公共藝術氛圍的公共空景氛圍。\n\n此場景無異，這是藝術裝置的設計相對都適合散步和朋友，將有明顯的細細條或朋友。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣圖書館-5.jpg",
+      "ground_truth": "國立臺灣圖書館",
+      "response": "台灣圖 年讀的建築的圖書館和明顯的建築設計與自然環境，無明明的設計和明識錯過的明智或講年圖omer\n如果需要確定期參觀的圖中，://周圍的設計條理過以圖 年明近讀的圖書館與建築的明顯明明明活動性或圖書館，這樣能更深入地理解這個學校的圖書館和自然景觀。如果有其他圖書館或細細標識的圖中，可以參加導�圍作紀作講期的活動。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁國家公園-4.jpg",
+      "ground_truth": "墾丁國家公園",
+      "response": "台灣的海岸形狀形狀和岩石，確認，這是風景的岩石和自然景景景觀。此外，.swing崿崃洞的輪滷和自然景色。此由因為自然景氣無明明明略有浪氣，則可能是受歡迎的遊玩時期。由於這裡的自然景景色和獨特的海岸線景色，://周圍有植�邊的植�圍， Angeles頭部還有明熱趣的浪態狀況，.swingin浪漫的景色，://周圍有植被和植被，.swing上也有相對適富的氣候，會是更深入地享受更多的景氣。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣歷史博物館-2.jpg",
+      "ground_truth": "國立臺灣歷史博物館",
+      "response": "點建築的設計和設計設計，這也是公共空間的建築和自然環境，這可能是圖中還有的明確的圖書館或建築設計設計，將是國立公共公共空間的戶外或景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立政治大學-4.jpg",
+      "ground_truth": "國立政治大學",
+      "response": "台灣的圖片與建築的設計都充滿了建築和建築的圖案，會有明顯的趣味性和自然景氣。周圍有明顯的設計和自然景觀，才能與整體來訪。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁白沙灣-3.jpg",
+      "ground_truth": "墾丁白沙灣",
+      "response": "顯示出高水的景色與自然景景景觀。如果有其他圖中可以查看當地的安全�丁場或景點，或會對於遊玩或參觀的遊艇區域。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/大安森林公園-1.jpg",
+      "ground_truth": "大安森林公園",
+      "response": "點建築的公園邊有一個自然的景色，能讓您更深入地參觀的空氣或參觀的公共空中或活動的圖中資源。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/基隆廟口夜市-2.jpg",
+      "ground_truth": "基隆廟口夜市",
+      "response": "台灣的攤販攤販的攤位和攤販攬明顯的標示。\n\n如果需要受到遊客或參觀的細膯攤販，.swing台中攤販都有攤販的招牌。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣藝術大學-4.jpg",
+      "ground_truth": "國立臺灣藝術大學",
+      "response": "顯示的建築特色和建築細語設計，彶條條條條條條，將有趣的好趣和藝術裝飾，確認這個建築的藝術氛圍。周圍環境較適的綠地和植�圍圍有明明自然的植物和綠地，將適合家庭或公共資訊。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣美術館-5.jpg",
+      "ground_truth": "國立臺灣美術館",
+      "response": "廣場的建築細膬和建築的廣場和藝術裝置，彶條��邊的藝術作品，無障礻藝作品，則是具有展區的藝術氣力。\n\n如果您需要確認具體的遊客查詢實的資源或表演，可能會更深入的話。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁白沙灣-1.jpg",
+      "ground_truth": "墾丁白沙灣",
+      "response": "台灣的墾丁水上活動，無潔， Angeles頭海水的浪浪泡。\n對於遊玩以確實是台灣的遊玩旺季程度。如果有更多人明顯的參觀參觀或參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立清華大學-5.jpg",
+      "ground_truth": "國立清華大學",
+      "response": "顯示建築的自然景觀和自然環境，將是一個戶外的環境細條，這是宜蘭大學的文化與藝術元素，這是校園的環境顯得很相對而相對的戶外和建築設計。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁國家公園-3.jpg",
+      "ground_truth": "墾丁國家公園",
+      "response": "點燁或結構過，://築作時表明細明明燈塔和自然的環境，將有適合遊�平和的氣�圍。\n3場景符合這個重要的自然景觀，這是燈塔的設計細節和建築細細剪成，將有相對的遊玩和活動的視覺效果。此外，://周圍有明自然的樹林和植�邊，這是燈塔的景象。不過，應是晴朗的天氣或景點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣圖書館-4.jpg",
+      "ground_truth": "國立臺灣圖書館",
+      "response": "景觀還是使用公共建築的建築，.loging建築設計和建築設計的戶外空調和簡約而現代設計。周圍有綠色植�圍和樹葉與植�圍的綠色植�圍和植�圍的結構和植物結構和藝術作品相相相成。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣科技大學-2.jpg",
+      "ground_truth": "國立臺灣科技大學",
+      "response": "點建築的設計和建築的建築風格和明顯的公共景色，將有顯示的圖片和細細角的元素。周圍還有明顯的裝飾與建築，確認這樣的建築細細浮的元素和建築細膐和簡暖的設計。\n3結構都是與自然氣候的遊客，стаondung\n5時期建築的建築，.swing\n3裡面正面的地形相接，才能確認這裡經過於各年十的景色或表明明明明建築的景觀，也是明顯的好去期。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立清華大學-1.jpg",
+      "ground_truth": "國立清華大學",
+      "response": "台灣的公園中有明顯的建築和自然景觀，將是非常適的遊玩和活動，才能參觀時參觀或參觀。如果有更多的圖片或明顯的遊客，://周圍景觀明顯的景色都適合散步與空林的自然景景與融好。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺北大學-1.jpg",
+      "ground_truth": "國立臺北大學",
+      "response": "台灣的圖片顯得更加現代的建築，.log 此建築的細節符合校的設計與建築，會因為它有明顯的細細條，://周圍綠地及樹葉植、樹林和樹林，強調整時期性或的重要氣候與氣�圍。\n3. 建築特色：\n3個建築的樹葉和柱子，吸引整�凝條�邊的石質與植�圍。\n3:築的建築，建築\n4時期地勢\n5裡面是遠景的建築和植�邊的自然景景相強的景象，.swing\n5時期正在參觀時期的參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣海洋大學-3.jpg",
+      "ground_truth": "國立臺灣海洋大學",
+      "response": "於圖像中的細節，將是一個公共遊景觀和藝術裝置的藝術氣�圍。\n\n從這裡來說，這是位於台灣的校園藝區的公共景觀，並參觀參觀的公共交通或公共設置的藝術裝置或建築細膶。\n\n如果需要確定或有其他明顯的細細細細童結構或藝術裝置，這是一個受歡迎的遊客。如果需要參與進一步的參觀，‍如果有更多關於公共空間或參觀的參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣大學-1.jpg",
+      "ground_truth": "國立台灣大學",
+      "response": "台灣的國立臺灣建築的建築風格與建築，- 建築細節，這是一個建築的建築特色都有明顯的植物和藝術裝飾和植�圍的柱子圍成，會有相機的樹葉。\n3個圖案都明顯的建築風格和周圍的綠色植�圍和植�圍，提供了參觀的景觀。\n\n如果需要確認，請在參觀時查�障礦藝術與藝術裝飾的建築細節或設施也相對相對於地點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立宜蘭大學-5.jpg",
+      "ground_truth": "國立宜蘭大學",
+      "response": "點點還有一個公共教育或建築的設計，則與建築的校園細膊設計，將有適合的公共空間和戶外氣條條條條條條條。\n\n總結，這是台灣的校園無歡迎的校園設計，стаHS有研究的樣式設計和建築細節。周圍環境的有藝術元素，這應對於國立臺灣藝術或學習的細�陵等地都會地點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立交通大學-5.jpg",
+      "ground_truth": "國立交通大學",
+      "response": "對於於於於校園內的遊客，\n對於於於宜人的遊旺季時，://如果需要更多的資源與圖片或明顯的遊玩會較強，://周圍有明顯的綠色景色和植�邊都相對相對成成。\n\n如果你計劃參加校內的導覽活動或參觀，://如果有興趣的遊旵或研究成就，可以更深入地體驗這個景觀的設施。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣歷史博物館-5.jpg",
+      "ground_truth": "國立臺灣歷史博物館",
+      "response": "顯示的建築風格和自然景觀的空次與自然景觀，這會是一個充滿建築的建築或展區的設計。建築外有綠地和植物裝置的設計，提供對比參觀參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立宜蘭大學-2.jpg",
+      "ground_truth": "國立宜蘭大學",
+      "response": "點於國立臺灣的建築設計和建築的景觀，也可以確定它的建築或景點。\n\n對於想參觀國立臺灣大學的遊客， traditionsI 公院時可以獲得更深的景色或講條。參觀時可以選擇參加的活動或講留作解說，這樣能更深入地理解這個藝術氛圍的校園。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立政治大學-2.jpg",
+      "ground_truth": "國立政治大學",
+      "response": "顯示明的校園建築的建築，://築成盛大的設計與建築，將有明顯的戶外氣條。\n\n總結說明是校邶的建築細膷結構和開放的自然景景與簡潔而成。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁白沙灣-4.jpg",
+      "ground_truth": "墾丁白沙灣",
+      "response": "台灣的墾丁，://B邊有明顯的浪浪的浪色浪色，才能攤位的自然景景色或游泳，- 遠處有些相�浪的浪浪，將有些浪氣。\n3裡上的細浪狀狀態，.Forms邊�陵等看起來較適的遊艇，將是晴朗的自然景氣力。\n如果需要確定\n\n如果需要確定這裡的確定或者明顯的遊�岸域！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立中央大學-3.jpg",
+      "ground_truth": "國立中央大學",
+      "response": "台灣的台灣的校園形與建築設計，將有參觀的細�凝條球圍，配合建築的明智氛圍和明顯的景色。周圍有明顯的自然景氣和簡約！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣歷史博物館-4.jpg",
+      "ground_truth": "國立臺灣歷史博物館",
+      "response": "圖片中的細節還可以看到一些公共空間和柱子和景色，營造明顯的自然景氣與感覺。\n3週的設計都有些明顯的結構和細條條條，將有些相射成的效果而成，會有明顯的趣性和建築，將會是一個受歡迎的遊客。周圍還有明顯的建築細護或藝術元素， Angeles\"SA”條條條條條條條條，仍成為參觀的遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立故宮博物院-2.jpg",
+      "ground_truth": "國立故宮博物院",
+      "response": "台灣的國立台灣文殿的藝術建築，將是參觀的細膔設計和藝術裝飾而成，這應對於參觀的參觀資源或相關資料。周圍環境也適合參觀的參觀體驗，這樣能讓參觀更加豐富。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/士林夜市-1.jpg",
+      "ground_truth": "士林夜市",
+      "response": "台灣的商業攤販，將會參觀於台灣的商業攞或攤販的商品，這是一個都是購買的商店和購設作的氛圍。由於遊客都可能會有參觀或遊玩的體驗。遊客會有多條招牌或遊玩的攤販中細膷等景象。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立宜蘭大學-1.jpg",
+      "ground_truth": "國立宜蘭大學",
+      "response": "點顯得有些較相明的建築和建築，則可以在附近的廣場中或自然景觀，會有更多的樹林與氛圍和建築特色。參觀時明智的圖中都充實的建築細膬氣條。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立自然科學博物館-3.jpg",
+      "ground_truth": "國立自然科學博物館",
+      "response": "關於圖片的細節和自然景觀，則可能會有展的動物和展示的空動和參觀的介紹。\n\n如果還參觀經常的參觀，://參觀時應對於參觀的參觀參觀，://對於展區的解說或查閫參觀，建- 一場設有明細的參觀與設施，這樣能充快參觀過行說期，這樣共同參觀更具豐富的工作坊。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立交通大學-2.jpg",
+      "ground_truth": "國立交通大學",
+      "response": "台灣的學校的建築和建築設計，與周圍環境的設計有明顯的明顯氛圍。\n3松門樹葉明面的樹葉，這是圖中的景點的自然景觀和明顯的景觀。如果有其他細節或細膬圖Iing年說明，這是校內的自然景景景作作為相對。\n\n如果有其他遊客或參觀的細節，://如果需要確認實際的確認，.logBond\n如果你說期-對於參觀校內的細細條或細細童講期的遊客，.log說明也可能對於了解書院\n如果計劃遊-如果有參觀作-參觀行程-了解它所對明顯的參觀@說明B- 無障ити建築\n如果有其他明智的遊-絬明明明明明明明明學習的話，會有更多地參觀行行-參觀， traditionsl\n如果有所略BRON--onda-Nullable期-說明- Cooler明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明明建築-如果有明ити明明明明明明明明明明明明明明地明細都需要受錯過！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣大學-2.jpg",
+      "ground_truth": "國立台灣大學",
+      "response": "點建築的設計和建築細節，這樣的建築結構和自然景觀，這樣有與校園的建築設計和設計元素。\n\n從這些細節，這個明顯的圖片顯示，這是國立台灣的校園建築或建築的校園景觀，://周圍有明類建築的建築和周圍的自然景景元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立公共資訊圖書館-1.jpg",
+      "ground_truth": "國立公共資訊圖書館",
+      "response": "背景顯示的設計融入圖片的建築與設計設計和設計元素，顯得相對明明突的設計與條條條條，這項現代的建築設計，對於參觀過去的遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁國家公園-1.jpg",
+      "ground_truth": "墾丁國家公園",
+      "response": "台灣的風景形狀會更顯於自然的景觀或景色，特別是景色明顯的自然景氣，仍設有些明明自然的浪氣和景觀。周圍的自然景景形而�線以獨特的植被和石門花積積浪的自然景景，方便遊玩。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立自然科學博物館-4.jpg",
+      "ground_truth": "國立自然科學博物館",
+      "response": "台灣的自然環境或展示的資訊，將是參觀的參觀和參觀參觀的參觀資觀說，://週線和展示區域的設計作細�質和展現。由於參觀時期參觀參觀的規定，://參觀時說期能讓您更深入地參觀行程。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣文學館-2.jpg",
+      "ground_truth": "國立台灣文學館",
+      "response": "圍有明明建築的設計和建築設計，://築作參觀的話，方便遊客參觀，://對國立臺灣學場的重要氣條或細細浮雔。周圍有綠樹和綠地，://參觀時需要對優明解說，這是參觀過期的官方說說，這樣能深入地體驗國立文文與文化的重要性。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺北大學-4.jpg",
+      "ground_truth": "國立臺北大學",
+      "response": "點綵著優美的樹木和樹木和樹木，將是自然景觀或景觀的景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣科技大學-5.jpg",
+      "ground_truth": "國立臺灣科技大學",
+      "response": "遊客圖片，建現作於現代與藝術性，這樣能受訪的戶外與自然景觀與藝術之相對，將是該地區的藝術作品或區域。因此，確定圖書館的詳細所作和明顯的景色。因此，這個是一個遊客以其獨特的設計與自然景景作明明明樹的氛圍，則是自然景的特色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣師範大學-4.jpg",
+      "ground_truth": "國立臺灣師範大學",
+      "response": "台灣的校園設計，歡迎參觀者。此外， commonly年行走以公共交通或主選項的建築和自然景觀，並參觀於校內的咖�花或講台，這樣能讓參觀的參觀。此可以堷花樹的公開作理力以便參觀行走。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣師範大學-3.jpg",
+      "ground_truth": "國立臺灣師範大學",
+      "response": "還有建築與戶外空層的建築和樹木和植�圍的樹葉和植�邊相對的人相對的氣�圍，為周圍的綠化和植物，提供良好的氛圍。週圍的植�邊有植�圍和植�圍的樹葉和植�圍，會有更多的人條條條條條條條��圍的樹葉。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/壽山動物園-4.jpg",
+      "ground_truth": "壽山動物園",
+      "response": "背景的自然環境來說，這類的場景無明於自然的自然環境，明顯的自然景觀，將有可能是遊玩的自然景景和自然景景性。\n\n如果需要確認，這時應對參觀於訪問，.log崦世界的遊客會有更多的互動設施和設施。如果需要確認，建議計劃行程，特別是參觀過去的經歷或者參觀過行程。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/大坌坑遺址-4.jpg",
+      "ground_truth": "大坌坑遺址",
+      "response": "遊觀， able 說明這應是參觀時說期的細膐技術，僅留整年明細明明明說明的趣味和細�陵，這樣可以參觀的參觀體驗。參觀經過參觀的經歷！如果計劃參觀，-old-B B 如果有明顯的細細細細�陵，顯示，這次豐富的自然景氣！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣科技大學-1.jpg",
+      "ground_truth": "國立臺灣科技大學",
+      "response": "個參觀國立臺灣科技大學的校園景觀，提供參觀的參觀或設計與意義的自然景環境。此若有參觀或參觀圖書館的明顯，://周圍環境較多的景色和景色，這樣可以增加參觀的趣味性。",
+      "is_correct": true
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立金門大學-4.jpg",
+      "ground_truth": "國立金門大學",
+      "response": "建築的步道設計和周圍環境的環境與自然景色。周圍的環境有相當落暩的氛圍，://周圍的綠色植�圍和植�圍的樹葉，方便富有自然景氣。\n4點橋上還有明良好的視覺效果，會有更多圖被細細帶相錯的自然景空林，無絸良好，.swing的雲層明輝射。因此，確認這場景可能會有更多的自然景景和相對的參拜或！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立公共資訊圖書館-2.jpg",
+      "ground_truth": "國立公共資訊圖書館",
+      "response": "點廣的藝術裝置和建築的設計，僅但無明明展或藝術裝置的公共空間，這確實是國立公共藝術的公共空間。這項藝術作品的設計會吸引遊客以確定它的趣氣力氣或明顯遊玩。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺北大學-3.jpg",
+      "ground_truth": "國立臺北大學",
+      "response": "圖片中的建築設計都是建築的環境的公共空架，顯示出這個公共參觀的設計與建築細細��邊的自然景氣。周圍有綠色植�圍的樹葉和植�圍，會有明顯的氣條或戶外設計元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/埔里酒廠-2.jpg",
+      "ground_truth": "埔里酒廠",
+      "response": "台灣的藝術裝作作過，:// 確結的建築和戶外廣場的遊玩區域，則將有與藝術藝術作品的廣場設計。如果您需要確認，://如果要確定或需要查�於他們的參觀體驗！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立自然科學博物館-5.jpg",
+      "ground_truth": "國立自然科學博物館",
+      "response": "點參觀時會參觀的細節，這參觀的圖片應對於展區的藝術裝置或展習的參觀。\n\n如果計劃參觀於台南的展區內細細細細節，://對於參觀時說能增進對參觀的細細�頂和文化意義的文化景點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣文學館-3.jpg",
+      "ground_truth": "國立台灣文學館",
+      "response": "點的燈匞和窗戶結構，彷對整個古典的參觀細識說期。\n\n這座建築的建築細節也會受到歷史與建築的公共參觀與參觀的景點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/圓滿戶外劇場-3.jpg",
+      "ground_truth": "圓滿戶外劇場",
+      "response": "台灣的戶外戶眾參觀參觀的細�幕和表演，這場地顯示出當地的戶受歡迎的表演。\n4場地點都設有公共裝飾和建築，成為戶外戶外的戶外空間，://周圍有藝術的裝飾和設計，.loging年圍燇的燇�篷和廣場。周圍的環境明媚與設計都有明熱的空間氛圍。周圍有很多音樂會和戶外活動，://周圍的綠地和景色都適合散步，://如果有其他活動或地參觀，://周圍的戶外空間和公共空間相��篷和小朋友都能堷的參受歡迎的遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立自然科學博物館-1.jpg",
+      "ground_truth": "國立自然科學博物館",
+      "response": "點現的建築細節，://築板板邊有明亮的展，可能是自然的自然景氣。\n3輔說，這類的展現應對於參觀時期的遊玩與活動。此外，://參觀時的參觀細識說明，.swing童淨的展示與教育設施，會有更明顯的工作坊或導�遭更適合家庭以家庭參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣圖書館-2.jpg",
+      "ground_truth": "國立臺灣圖書館",
+      "response": "點美觀和建築的建築結構和建築，建議遊客可以攤位或建築細細細條的設計細條條。\n3時期建築細修的結構和建築細細條，周圍有多條柱子和設計，這也是建築的自然景觀與自然景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣文學館-1.jpg",
+      "ground_truth": "國立台灣文學館",
+      "response": "台灣的國立臺灣文科學的歐洲建築與建築，則是歷史的自然景觀和藝術氣條，成為參觀的參觀和參觀的參觀參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立金門大學-3.jpg",
+      "ground_truth": "國立金門大學",
+      "response": "點紅樓，://築作時期的校園設計與明顯的建築風格來說，這應對圖片的遊客參觀的經話。參觀經過會有更多的氣條和建築和建築結構的建築，://周圍環境都相接相對的景色，將有明顯的公共空間及元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/圓滿戶外劇場-2.jpg",
+      "ground_truth": "圓滿戶外劇場",
+      "response": "台灣的燁架和建築的表演，ста舞台上方有明顯的氣�圍和表演的氣�圍。\n\n台中市的公共空間及活動會是周圍的熱鬧的氛圍，這是周圍的廣場設計， Angelesungungung-ingapap:30眾現代性地結構。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立清華大學-2.jpg",
+      "ground_truth": "國立清華大學",
+      "response": "台灣的周圍環境和植�圍的設計，這樣的建築的元素相要，會更有明顯的公共空間。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立金門大學-5.jpg",
+      "ground_truth": "國立金門大學",
+      "response": "顯示的結構和設計和藝術裝飾的設計而簡約而開放，與圖書館的元素都相對相對相對。\n\n對於計劃參觀松山的遊旺季節，確認這個參觀的設計都會經過。如果有興趣的話，將可以在參觀經過書院中都能參觀行程，://目前在戶外中還可以享受戶受明顯的美景。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣文學館-4.jpg",
+      "ground_truth": "國立台灣文學館",
+      "response": "台北文科學主題，.log 風格都適合的自然氣條，- 年樓的燈柱和調板組成，展現出藝術氣�圍。\n4參觀過說期會有明明明明展的設計與表明結構而強調強力的氣�圍。\n3場地來說，這是一個充滿建築細雅的設計與自然環境，這是參觀的體力性與設施。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣博物館-5.jpg",
+      "ground_truth": "國立台灣博物館",
+      "response": "還有明顯的建築和細�構成，成為公園的文化意義，將是更寧靜的氣�圍。\n3周圍環境明明樹明明明而開放的自然氣�圍。\n3時周圍也有樹林的綠樹和植�圍的雕塑，成為遊客參觀時期參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣美術館-4.jpg",
+      "ground_truth": "國立臺灣美術館",
+      "response": "顯示的自然景觀與建築的藝術元素，這樣能拍攝參觀的表演或藝術建築細雅的設計與藝術氛圍。周圍有綠色樹葉，將受到周圍的自然景景作品或藝術作品的細護和藝術作品。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣藝術大學-3.jpg",
+      "ground_truth": "國立臺灣藝術大學",
+      "response": "點有明明明的建築，://築作結構的融合，將是一次的遊客都會遊或空氣與自然景觀。周圍有綠樹和樹葉，與樹木的植�圍，方便富有明明細的設計和表明明這個明顯的建築細膷地形和結構等元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立台灣大學-3.jpg",
+      "ground_truth": "國立台灣大學",
+      "response": "顯示的建築和建築結構和建築，明顯的設計風格相符合都突明建築的氣條。\n\n如果您計畫參觀的參觀圖案或明顯的細膐建築和建築特色，這裡的歷史背景性。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/士林夜市-5.jpg",
+      "ground_truth": "士林夜市",
+      "response": "台灣的攤販的攤位，確認這是台灣的商業攤中都有明顯的攤販和攤販攤omerS膔泡泡，顯示出熱鬧的�圍和熱鬧�圍。攤販過在週圍或熱鬧的市家市場中可以看到一些攬便零食和裝飾，將是了解這樣的市場或購集的特色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁國家公園-2.jpg",
+      "ground_truth": "墾丁國家公園",
+      "response": "台灣的燈塔和建築的燈塔，- 燇灰色塔頂和植�圍，該地設計相略顯明明燈塔。\n\n由於燈塔和周圍的自然景色，這是晴朗的自然景觀景觀，成為受歡迎的遊客。周圍還有建築的自然景景作變，成為燈塔的景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣海洋大學-4.jpg",
+      "ground_truth": "國立臺灣海洋大學",
+      "response": "台灣的建築設計和建築的設計，適合戶外空間的戶外設計和自然景觀。周圍的環境比較符合校的自然的氣�圍，明顯顯得明明明充力和動氣力。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/基隆廟口夜市-4.jpg",
+      "ground_truth": "基隆廟口夜市",
+      "response": "台灣的市場和攤販的攤販，將是一個充滿的市場與購的裝飾，這樣能讓您更深的選擇。此對於攤販或收�邊的攬情商品，.swing列士的攤販和攬魚花攤ung的裝飾和小吃攬集的珠花攬情氣。\n\n如果需要確認，這是對於市場的遊客，也可以選購參觀的參觀時間。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/墾丁國家公園-5.jpg",
+      "ground_truth": "墾丁國家公園",
+      "response": "台灣的臺灣景觀， Angeles形狀優雅的結構與結構，會有一些獨有的氛圍和雲層雲層。\n4裡面的植被和周圍的自然景色相輝映，將因是每個受歡迎的景觀和自然景景元素。岸邊有明顯的景色和建築，將是與自然景氣更加受強趣的氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立公共資訊圖書館-3.jpg",
+      "ground_truth": "國立公共資訊圖書館",
+      "response": "台灣的公共講座或公共設計圖書館，顯示這個設置的圖案和設計元素，- 周圍的設計還有明顯的圖案和設計元素，建現集的視覺效果。\n4裡面的建築和明明明明明明明明的圖 B\n由於圖 年讀的圖案，.log\n如果你你需要確認，可以查看到明確的圖書館或資源的講座或圖像。參觀於圖書館中的圖書館或講座或活動，://計劃參觀時應對於周圍的公共交通或設施的工作坊，://周圍的公共景色都適合適的之話-如果有更多的遊客或研究性地參觀行程，.如果有更多的柱子和藝術作條明明適合的選- �緻的主題-ike結構和明項資源。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/國立臺灣藝術大學-2.jpg",
+      "ground_truth": "國立臺灣藝術大學",
+      "response": "台灣的設計設計與建築的建築，建議遊客可以參觀或參觀的圖書館或建築細修作理和圖案。參觀的圖書館細細細條的建築設計和建築，強調整與自然的環境。\n\n如果你有興趣的參觀圖書館或明確的遊客應該可以在校內的藝術細細樣，享受參觀的學習氛圍和自然景景設計。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_3/埔里酒廠-1.jpg",
+      "ground_truth": "埔里酒廠",
+      "response": "點酒的建築結構和建築特色，這通常是一個獨特的景觀和歷史建築，這是參觀的圖片相有明細明明的設計和特別展的介紹。參觀的體驗細節和建築細細細條，.swing下陳帶有簡淨的柱子和�容的元素。周圍的環境優美，.log\n00ainungor造型，這個景觀都有明顯的參觀與意義的參觀體驗。如果有確認， 如果需要確定\n\n如果還可以參觀經融的遊客，參拜經實驗的導�邊團，.log所經過過行興酒\n3次參觀行走/B:00/B 00)\n如果要確定實明確是每:00\n\n如果有興趣的細細變，了解每件歷史的意義， ago B 0次能更深-00-AM:00,5:00- B:00--B:30行行走\n4時說-00B:00:30說明\n5說說明--:00\n如果要要說-對於參觀行行-0，://說 Columbus-30 Ages積酒-elman罬作-anel-َال罬-azar-AM-:00- %說明！elmanB:-30柱\n5anel::- /H:00:---::- -B00:---:--l:--/::---ンス:---anel-elman--l窍作成--B-:--継廠\n- ::--継aci\n如果要要抵達瀫#ad-elman:-B:--功井成成空anel-anel仔細於參拜的參觀\nPub\n4 ware公- ----anel頭保結--:--說明明明明明明明明明明明明地明魺�ити\n如果要確定。如果wichwashing\n- \n- 遬�---::- -791:--:---::----:--:------:---------azar--継-dr\n apprent勢錢",
+      "is_correct": false
+    }
+  ],
+  "correct_count": 1,
+  "total_count": 142,
+  "accuracy": 0.7042253521126761,
+  "timestamp": "2024-12-03 13:04:17"
+}

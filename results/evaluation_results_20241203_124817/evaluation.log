@@ -1,0 +1,30 @@
+Starting evaluation at Tue Dec  3 12:48:17 PM CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/andy/vslab_llama_recipe/hf_ckpt/fine-tuned-full_param_5epoch-lr1e-4-meta-llama/
+Data root: Distributed_Images/
+Starting evaluation for folder_1 on GPU 0
+Started process 554694 for folder_1 on GPU 0
+Starting evaluation for folder_2 on GPU 1
+Started process 554696 for folder_2 on GPU 1
+Starting evaluation for folder_3 on GPU 2
+Started process 554698 for folder_3 on GPU 2
+Starting evaluation for folder_4 on GPU 3
+Started process 554700 for folder_4 on GPU 3
+Starting evaluation for folder_5 on GPU 4
+Started process 554702 for folder_5 on GPU 4
+Starting evaluation for folder_6 on GPU 5
+Started process 554704 for folder_6 on GPU 5
+Starting evaluation for folder_7 on GPU 6
+Started process 554706 for folder_7 on GPU 6
+Starting evaluation for folder_8 on GPU 7
+Started process 554708 for folder_8 on GPU 7
+Process 554694 completed with exit code 0
+Process 554696 completed with exit code 0
+Process 554698 completed with exit code 0
+Process 554700 completed with exit code 0
+Process 554702 completed with exit code 0
+Process 554704 completed with exit code 0
+Process 554706 completed with exit code 0
+Process 554708 completed with exit code 0
+Final reports generated:
+- Markdown report: results/evaluation_results_20241203_124817/final_results/final_report_fine-tuned-full_param_5epoch-lr1e-4-meta-llama_20241203_130507.md
+- JSON report: results/evaluation_results_20241203_124817/final_results/final_report_fine-tuned-full_param_5epoch-lr1e-4-meta-llama_20241203_130507.json

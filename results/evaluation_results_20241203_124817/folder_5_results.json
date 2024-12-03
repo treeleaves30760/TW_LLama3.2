@@ -1,0 +1,862 @@
+{
+  "folder": "folder_5",
+  "gpu_id": 4,
+  "results": [
+    {
+      "image_path": "Distributed_Images/folder_5/林本源園邸-4.jpg",
+      "ground_truth": "林本源園邸",
+      "response": "遊客以參觀的參觀體驗相對的建築和建築，會有相對的裝飾和設計。這次的建築和自然環境與文化資源，將有錯過的藝術元素，這是園邸的重要遺址。週邊有明顯的綠化和植�圍和綠植等而強調的氛圍。周圍有綠樹和植�圍的樹葉，.swing的元素看起來相對相機。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東吉嶼燈塔-4.jpg",
+      "ground_truth": "東吉嶼燈塔",
+      "response": "圖片確定，.log **\n對於於位於臺灣的自然形狀或自然地點，才能應該確定地點。蘭嶼的形狀與美景或明顯參觀的安全氣況。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水-1.jpg",
+      "ground_truth": "淡水",
+      "response": "台灣的建築風格和建築細�圍的建築結構，這樣的設計融出相過。岸邊的建築設計和周圍的綠色植�圍，可能會有更多的城市或遊客。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水老街-1.jpg",
+      "ground_truth": "淡水老街",
+      "response": "點傳統的商店和攤販的商店，這也是熱鬧的氣�圍。\n\n對於計劃參觀街道的遊玩，://對於遊客參觀於這個市集的遊旺士和街道的獨特氛圍，這樣可以錯過了整忙的建築細節。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/望安花宅聚落-5.jpg",
+      "ground_truth": "望安花宅聚落",
+      "response": "台灣的台灣的自然景觀，會有更準適的服裝與元素，彶球的花�子。\n3些元素都都可能是黃色或公競的公園，建議選擇適的空間或設條條植物，細語都是錯過的戶外氣�圍。此外，遊客可以參觀經過確認這個景點，欣賞周圍的自然景景細�邊的景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水漾森林-5.jpg",
+      "ground_truth": "水漾森林",
+      "response": "台灣的自然景觀， Angeles蜦樹，將有些相對的靜與植�圍的景色相層而透過自然的植物和植�圍，這樣的自然景氣無異，這是太遊�山地區的自然景景景。\n\n如果您計劃參觀參觀時可以查詢到水穴的裝備和細細條都相對結合。如果有參觀的參觀體驗，.log年往能更深入地細細條，://如果有更多的遊�金空林裝備，.swing下過過，並可以遵循戶受整天規則，://保護這個地方的景色更加�道與鞋子-ike以便於深入地備適-�陵。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明志書院-5.jpg",
+      "ground_truth": "明志書院",
+      "response": "台灣的文文藝品與建築的細節，方便遊客提供參觀的參觀參觀或解說的參觀解說。如果需要參觀行程， AngelesOouasO\n如果需要參觀作會的查受興趣的細細條細條，這樣能更深入地體驗這是台灣的重要�置與文化意義。如果需要進一步確認，-old年時期的經驗期期會有更多的文化�飾作作期。此",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朱銘美術館-5.jpg",
+      "ground_truth": "朱銘美術館",
+      "response": "景點確應對台灣的公共遊客或展現觀的公共資觀賞與自然景觀，可能會有明顯的藝術作品或作賽作品。此外，://周圍環境明顯相對結構和植�遭的植�圍，顯示這次的自然景景空間。此外，建議留作講日或工作坊或工作坊，這樣可以更深入地享受自然的自然景景與藝術氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/池上稻田-3.jpg",
+      "ground_truth": "池上稻田",
+      "response": "點山的路脔標示，這是台灣的景觀景觀與自然景氣。\n\n如果需要確定\n\n如果需要參觀車場的遊客， invitedB- 道路道路\n對於於於颻農田的遊旺季節，://台東松山脧業氣明明明明地明顯的氣氛&受歡迎的農場和景色。此遊客應該於這裡的農田或選擇參觀的體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/新營服務區-4.jpg",
+      "ground_truth": "新營服務區",
+      "response": "的景觀細識說明，這是自然景觀的景觀和明顯的景觀。周圍的自然景觀也明顯的公共空間和植�圍設計。此外，://周圍的植�圍柱，為自然景觀中還有豐富的空間及設置。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山慈祐宮-3.jpg",
+      "ground_truth": "松山慈祐宮",
+      "response": "台灣的台灣的媽祖的裝飾，會有對傳統的裝飾或細�包�的裝飾，可能會有相對的媽祖習俗，仍保持�邊的�祥和而明明明吸引徒靜謐的景色，需參拜的參拜參拜，://周圍環境來說，這樣可以更深入地理解更多的歷史與文化氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/望安花宅聚落-1.jpg",
+      "ground_truth": "望安花宅聚落",
+      "response": "圖片中顯示的建築特色和建築的傳統建築和設計的風格與設計。\n**細節**：細細節還有一家人行行，顯示出建築的自然氣條。\n3裡面還有明顯的雕塑和藝術氣狀況，提供對於自然氣�圍。\n\n對於於想要參觀於聚落的遊客， versa說明這是一次代表性的氣�遭明明自然景觀和文化景部的景色，並確定。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明志書院-2.jpg",
+      "ground_truth": "明志書院",
+      "response": "台灣的書院和建築風格的建築中都相對明顯的景觀，會有更多的細節和文化活動。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東海大學路思義教堂-1.jpg",
+      "ground_truth": "東海大學路思義教堂",
+      "response": "台灣的建築設計和建築，.swing- 教堂的設計和結構，.Forms的建築風格相強明明明這是一個受歡迎的參觀。周圍環境優雅的簡約與結構，://周圍環境明亮的自然景空匷�，.FormsGO\n這個景觀都都會參觀經過參觀的參觀或參觀的參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林本源園邸-3.jpg",
+      "ground_truth": "林本源園邸",
+      "response": "顯示的是台南的建築和建築，://築作過時期的景觀，方便遊客參觀過參觀的結構和活動。周圍的環境優美和建築風格來說，這是參觀的參觀經歷，這是台灣的重要意義或文化意義的文化意義。此外， been院廟邸的樹葉和柱子等都是了解書院的歷史與文化。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/檜意森活村-5.jpg",
+      "ground_truth": "檜意森活村",
+      "response": "點建築的自然景觀，這個建築特色都適合的自然景觀和建築的元素，將是這個自然景觀的景觀。周圍環境明顯的自然環境相對相對明顯的自然景景景相對充實。周圍還有明明明說明的建築或裝飾作過參觀。此外，建- 4說明，這是參觀的遊玩過去，://如果你確定或者參觀經常行程，://",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林默娘公園-4.jpg",
+      "ground_truth": "林默娘公園",
+      "response": "象徵歷史的特色，會有遊艇和裝飾的景色而明明遊或活動的景觀。因此，遊客可以在參觀時期參觀過參觀。參觀過程\n\n如果需要確定，.對於參觀經過參觀過行的遊客，- 碇上的細細條條條件，://如果有遊- �重的手工藝結構和柱子，://參觀經歷作定期節期。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/景美夜市-2.jpg",
+      "ground_truth": "景美夜市",
+      "response": "台灣的商業攤販攤販，這樣可以相過，://如果要確定的參觀或遊玩參觀。周圍還有明顯的建築和攤販，這樣能對訪以確定這裡的攤販與結構與動作的�油雬構，這會讓這個地點更加豐富的景象。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/新營服務區-5.jpg",
+      "ground_truth": "新營服務區",
+      "response": "點綵花和植物形狀，才能顯示這個自然的自然景觀和自然景色。\n3枚��圍給一盬的水花和相對強烈的氣�圍。\n\n如果您計劃參觀於這是當地的美景區或明顯的建築細細品，://如果你需要了解到對當地的建築或建築細細作的細膷和水池等都可能會明顯的元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明新書院-1.jpg",
+      "ground_truth": "明新書院",
+      "response": "點建築與建築的建築外觀，這樣可以相對參觀的參觀圖像。\n\n周圍的環境：\n對於遊客應該於參觀周圍的文化氣息，.log 如果有更多的細膊細膐雕塑，.Forms的設計細膔剪黏琷�的雕塑和建築和藝術結構，仍有明靈氣明近。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/梧棲漁港-4.jpg",
+      "ground_truth": "梧棲漁港",
+      "response": "台灣的商店域和攤販的建築， Angeles窄收），是購食域的食作商品，這確實是台灣的購物中心的特色資食攤販。遊客可以參觀的空間或購物攬利空間的特色，配合便利的地方。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朝日溫泉-3.jpg",
+      "ground_truth": "朝日溫泉",
+      "response": "台灣的自然景觀和自然景景觀，無法確定這是位於台灣的自然景區。周圍環境的自然景景色和植�圍的自然景景景，僅有明顯的自然景氣。周圍的植被和周圍的自然景景觀，://周圍的自然景觀，並適合遊玩。此外， versa/年設有明明明明明樹的自然景氣和休息。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東海大學路思義教堂-2.jpg",
+      "ground_truth": "東海大學路思義教堂",
+      "response": "顯示出明顯的視覺效果與設計，成為參觀的自然景觀和藝術氛圍。\n\n參觀這個建築的設計設計都會正在參觀，://周圍的環境都充足的靈態氣�圍，成為參觀經過過眾強的參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/池上稻田-4.jpg",
+      "ground_truth": "池上稻田",
+      "response": "顯示這個自然景觀的自然景氣與風景而來，將是參觀過過或自然景觀，這將是一個受歡迎的農田和建築的自然景氣。周圍有些自然的自然景色，將有趣而明顯的自然景氣。此外，://周圍有植�邊的土地， Angelesh條浪�邊的植�圍和樹林都有明細。\n\n如果你對遊客可以在參觀時，://如果需要確定！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/情人橋-3.jpg",
+      "ground_truth": "情人橋",
+      "response": "圖片確是黃的漁船，.Forms吊燈，.swing的燈光效果相強亮明，才能確定這裡會有流浪的浪漫�圍和浪漫的浪藝和浪漫。周圍有明顯的視覺效果，顯示這個受歡迎的熱氣�圍。周圍的建築作為熱�邊的建築， Angeles形勢相對相輝映，://周圍的燈��圍染下都相對顯得相錯的人，也適合拍攝。如果有更多的人或設塑作作共同！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朝日溫泉-4.jpg",
+      "ground_truth": "朝日溫泉",
+      "response": "台灣的公共空間，才能確認這是參觀的戶外空間或公共空間。此外，://周邊有明顯的建築風格和建築細膐的設計和色調調條質細�凝條質的效果。如果需要參與參觀的參觀應對於參觀的經性或特別慶廟作有明顯的工作坊，://週邊的建築作為設施，這將是參觀於更多的戶外空間。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明志書院-1.jpg",
+      "ground_truth": "明志書院",
+      "response": "圖片的建築風格和建築結構和歷史建築和植�圍的設計，與周圍自然的自然環境環境。\n3柱子上有明顯的裝飾和建築的建築風格與植物，與周圍的自然景景色，這是保存意紀念之處的藝術裝飾和自然景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/池上稻田-5.jpg",
+      "ground_truth": "池上稻田",
+      "response": "顯示在農脬的農脬和農脬而成，適合農業的農脬，將有受農脬或自然氣息。\n\n如果計劃參觀周圍的廣場或建築細細條，這是當地的農業與自然景區，這樣能�會到當地文化或地便於的選擇。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/池上稻田-1.jpg",
+      "ground_truth": "池上稻田",
+      "response": "台灣的池上較多的自然景景觀或植�邊的景色來說，這是自然景色的農脬景作而進行。這裡的自然景氣，將有明顯的寧靜與農業空間，這將是可能是位於農業的自然景氣。若有其他會有更多的圖中，可以確定其確認，這是宜蘭的農田或自然景觀。如果有更多的資源或明顯的細細勢資源，.swing\n30條路\n對於希望參觀農場的遊客，細細節是參觀的遊�境選擇！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/武嶺-3.jpg",
+      "ground_truth": "武嶺",
+      "response": "對於於於參觀圖片的遊旺台的遊旺台的景觀，://周圍有明顯的雲層和雲�子，://大父的重要節條條條條條條，://年的山景都適合登山登雲。遊旺台的景象和景觀也是高峰的旅遊景點。如果您要確定應對計劃參觀過遊�山或攤位的景色。如果有更多的話， ableADinond�邊植下也適于遊�山-AM.如果有更多關於天氣或明確的遊客，遊客可以在訪問時堵開-勞，://由於參觀時更好地能欣賞到更多景美景/- 參觀， 如果有時間-elman次行走-00至遊-年的�花景，://計劃參觀經過這段交通能更深入地理解到訪問�山的規定-如果要要前往-elman次以獲得更深--說ाल/h巷等，遊客應該是當地的規範-elmanhh公車。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朝日溫泉-1.jpg",
+      "ground_truth": "朝日溫泉",
+      "response": "顯示的建築和景觀的景觀，建議遊客可以在參觀或參觀時期的活動或行程，這樣能確定。如果有識對園公車或參拜的參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明新書院-2.jpg",
+      "ground_truth": "明新書院",
+      "response": "明顯建築的入口，://築作過，這樣能參觀參觀的建築細�凝花條匐，這裡是一個景觀的重要意義和結構，這樣相對相對清靜的自然景景元素。此外，://周圍有樹木和綠樹，",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林默娘公園-1.jpg",
+      "ground_truth": "林默娘公園",
+      "response": "台灣的公共遊�圍線和其他景觀，- 細膷�的植�圍，為整個景色良好，顯示這是一個開放的重要氣息。\n3場地結合於高雄的公園景觀中都有明顯的公共參觀圖案或表演的設計資源與結構，這裡的設計條條條條條條條條。\n3裡面還有一些植物的藝術元素，無論是與公共交通參觀的朋友參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗山車站-4.jpg",
+      "ground_truth": "旗山車站",
+      "response": "點現台的展示，顯得是一個展區的細件，仍需參觀過參觀體驗，這樣能獲得更深的空間和景觀的細�構造。參觀時可以參觀過行或參觀的參觀參觀體驗。此外， earsBing30車廠作說明，這樣能更深入地體驗這項的自然景景作作說。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水晶教堂-1.jpg",
+      "ground_truth": "水晶教堂",
+      "response": "台灣的海浪空層，會受到明顯的氛圍或景觀，.Forms的柱子組成。周圍還有明顯的視角和明亮的設計和細浪變化的視覺效果，.swing持透過純暯的空次！參觀觀察台頂的設計和細�圍和景色而整體而明顯的婚條紋效果。周圍也有適的自然景空氣和相對的效果。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/望安花宅聚落-4.jpg",
+      "ground_truth": "望安花宅聚落",
+      "response": "台灣的景觀與圖案細節，顯示這是一個非常寧靵的元素，彷��邊的石質結構和雕塑，這也是荷蘭期的自然景觀之一，會有更相的細�陵與藝術作經過。\n3個周圍的裝飾細有細石與浮花，會有較多的細型細�跡或裝飾。\n3裡面有些受年現的細膥的裝飾和裝飾和簡暖的細�凝��邊。\n3裡面的裝飾作相言，這裡都有較多的細細�子，這會是一次難以確認。如果需要確認。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明志書院-4.jpg",
+      "ground_truth": "明志書院",
+      "response": "點建築細膐的建築，與周圍的環境相復明而明顯的景色，這將是一個充滿的歷史與文化氛圍。\n\n參觀台南的細節，.swingunganB�邊有植�圍和植�圍的樹花植物，建艇的街道面充足，://周圍有植�圍和植�圍，才能讓您確認這裡是台灣的重要交通或區域。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/橋頭糖廠-3.jpg",
+      "ground_truth": "橋頭糖廠",
+      "response": "興趣的建築和建築，.log **細�構成都都有展的裝飾和元素，這將是一個獨特的歷史與文化的景色。如果有其他圖片或明確的建築細節，這是一個都是建築的歷史與文化的意義。此若需要更深入的選會更深入地確認這個景點。大朋友們，這個地方可能會有建築或藝術設施。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東吉嶼燈塔-5.jpg",
+      "ground_truth": "東吉嶼燈塔",
+      "response": "點標示的自然景觀和建築，.log 如果有其他攬明明明明明自然的明點設計。\n\n如果需要進一步確認，://如果需要確定\n\n如果還參觀於蘭嶼的遊客，.logBBand\n對於計劃參觀於保護地點- 敶脠的遊玩參觀，://蘭�湖， зренияP - 邶- 53. - : - Cons- - - ::lP:::l--ondP:::::B - 確�ити公園\n/ifX-A- итиP:B-6anel報公車\nити園203公園\n如果需要更多細細趣-結chal與保護地於保護保護的選-B\nити- ити礦公的景象\n如果計劃查- �勢明細留-ANEL-l爬明明明明景，://說明計劃應該是重要的景點-ángakingh石雕-302- :::- /:--:::--::--:::::B - --anel--::::545:-:541-00::--397:--l\nити::B - ити-:-- commissioner: UITableViewController明#ad明近地遊- felonyaskan-лаг崫\n felony継祖ngöran:--::--說明\n如果計劃년도正期能享受更深-l\n總- avir-::--561-anel---l\n议陽-::--lanel-- unborn-String-l Conserv\nити崫明明景---/P--anel-ingle-azar-\n216--------:--aly-Wheel\naskan公積ити:-- 声面的actionDate-397\n16 \nити--:--l-лаг\n- ----:--tableFuture:-- burgers\n Crane\n议-------anel----------------:-- UITableViewController明勢明明明明景\nelmanervoir---------aine膬#ad明明明明明明景\nsing-",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林百貨-5.jpg",
+      "ground_truth": "林百貨",
+      "response": "顯示的都是當地的商店和商店，需獲得參觀的服務或購化建築的細�質。參觀時確認這個實的建築或明亮的建築特色。周圍的燧花板，將是一個充滿歷史與�花花，://AMai- /- /\n00\n如果需要確認實明明明細明細購物地點，可以在周圍的商場中區域或建築過去的紀念地將會有更多的空間和裝飾。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水漾森林-4.jpg",
+      "ground_truth": "水漾森林",
+      "response": "顯示出自然的氣�圍與自然景氣。在上行行行，://周圍有樹林的植被和植�圍和樹林，會有更多的變化或結構。\n\n如果您計劃參觀過行或參觀的遊�山區，這樣能更深入了解這裡的自然景觀與文化。如果有更多圖中資源，.swing\n如果有其他明顯的參觀性或明顯的細�圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/日月潭-5.jpg",
+      "ground_truth": "日月潭",
+      "response": "於台灣的日泊的景色或景色，將受當地的自然景觀，顯得相美的氛圍。此外， aimed浮雞和雲層過差�頭泊或攬晚時前來參觀時間，這是日落時期的景色。此去處是日落的水景景，://周圍環境也適合拍適的選擇。周圍環境也有適合遊艇， Angeles頭直輝映，://岸邊景色都相錯的水景，.swing上堶次，.swing膐積水等結構作�備相anel的明忙地。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朱銘美術館-1.jpg",
+      "ground_truth": "朱銘美術館",
+      "response": "台灣的台灣藝術與戶外空中，://周圍有綠樹和樹林的樹葉，會有些參觀的表演或表演的細�凝條條條條條條條，歡迎參觀。此場地會有更多的設塑塑雕塑，://B Bing30條塑塑質結構和戶外活動的背景，這些都是展現的自然景氣。\n\n如果需要更深入的遊玩空間或地遊玩會以確認其地點。如果有更多圖像或明顯的話， invited年朋友能享受更深的參觀。此",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林百貨-2.jpg",
+      "ground_truth": "林百貨",
+      "response": "點明顯的建築和商店建築，將是一次充轉的元素或特別調。這次地點會有對高火的城市與建築風格，將對於參觀的細節或景觀會更深入地理解這個重要的的文化元素。此",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/池上稻田-2.jpg",
+      "ground_truth": "池上稻田",
+      "response": "台灣的自然景觀和建築的景觀，://周圍景觀有些自然景色，並且有明顯的景色細細條條，.swing\n對於於計劃參觀圖中有相接的遊客，://周圍的綠意和植�圍的自然景景區，imations年遠處有些自然景景細細條，彶條條條條條條條，則有適合遊玩的參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水晶教堂-2.jpg",
+      "ground_truth": "水晶教堂",
+      "response": "臺灣美景的建築，://周圍環境優浪的設計和植�圍和周圍的自然景景元素。\n這些細節都是一個受陽明的設計，成為參觀的參觀，.swing的參觀細修�子，這確實是與蘭陽的婚�克或建築。如果有其他圖- 建築細細透明的戶外空景都會，這樣能更深入地體驗到婚�陵的氣�圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗山車站-1.jpg",
+      "ground_truth": "旗山車站",
+      "response": "台灣的車站結構，明顯顯示的建築風格和建築風格的氣�圍。\n\n對於想要參觀旗山車站的遊客，:// 周圍有明明明明而相對的結構和建築風格。如果需要確認，-old年年時期的設施或景觀資源。",
+      "is_correct": true
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/望安花宅聚落-2.jpg",
+      "ground_truth": "望安花宅聚落",
+      "response": "台灣著蘭港的石門結構，這裡的建築相對顯得顯著的風格。\n3點門門門門門門上有些�邊的景色，這樣可以看到更顯明自然的建築風格和建築風格。由於荷蘭的傳統建築風格和明明明這裡的建築和建築風格相適。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/日月潭-3.jpg",
+      "ground_truth": "日月潭",
+      "response": "台灣的自然景觀與自然景景的遊客，-old時期的自然景觀， lakes頭直落變化。\n\n如果計劃參觀到湖泊的景色應是遊客堬季節的景觀。此保持宜季的景觀，以便能享受農業的自然景景點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/新竹車站-5.jpg",
+      "ground_truth": "新竹車站",
+      "response": "是一個車站的車站設計和建築設計，這是建築的自然景觀和景觀的空間或景觀而呈現相對的效果。\n\n對於參觀於車站的遊客，-old條條條條條和紋作能更加豐富的條紐和簡潔，",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/望安花宅聚落-3.jpg",
+      "ground_truth": "望安花宅聚落",
+      "response": "於石門石門結構的特色相對明靜的條條條條，將因為整體環境而認錯過。\n\n如果需要確定\n\n如果您計劃參觀圖 對於遊客參觀於參觀的細細畫作和節慶氣息，://如果需要了解當地的工作或參拜的體驗會更深入地理解這個地方的歷史和文化意義。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園石門水庫-5.jpg",
+      "ground_truth": "桃園石門水庫",
+      "response": "圖 **\n 結勢與自然景觀的建築相對�的自然景景，才有些相調。周圍的環境呈現有些自然和自然景色，可能是遊艇或重要遊�山地區。如果需要確認需要確認會會有更多的細�陵或活動節明顯的遊艇和景色。如果有其他會有明顯的遊艇或參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園大溪老街-1.jpg",
+      "ground_truth": "桃園大溪老街",
+      "response": "台灣的商業建築，可能是台灣的商業攤販或攬雨過，該地還有熱鬧的藝家的和攤販和攺�窄，將成為當地的小吃和攤販或商業景點。周圍環境都充滿悠閻璃的結構，可能是當地居民的氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林百貨-4.jpg",
+      "ground_truth": "林百貨",
+      "response": "顯示出現的細品的商品和建築風格，這裡常常的招牌和設計細調。\n4說明可能會有更廣的建築或攬復古的建築或建築，需參觀的參觀。如果需要細細細條條或細緻的細�陵選擇。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗山車站-3.jpg",
+      "ground_truth": "旗山車站",
+      "response": "點平靜， agoB扇形車造復復古的氣�圍，可能是台鐵的景點。如果需要進一步確認，://周圍的環境優雅細��邊在周圍景色中有明自然景氣。在參觀時期，.Forms列車停過在車站邊直車站和戶外設作結構作作作整�凝土等，這些都是參觀的好去期期期作作作。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園大溪老街-2.jpg",
+      "ground_truth": "桃園大溪老街",
+      "response": "點細節的攤販，這是台灣的台灣的傳統建築細節，.log中的招牌和攤販的招牌圍。\n對於計劃參觀應該參觀周圍的特色，.log 如細細年夕陽的建築細細條店攬結相�仔�域，這也是傳統的建築細節或傳統建築設計。此要確定。如果計劃參觀周邊的建築細品味表明這個地方會有更多的細語飾和細�跡作相對。如果有更多細�念， agoB- 月窄、攬集，.logAMABingBBong攤販，.swing\n5時成為遊客應100時-00/BwayanainSh:5anel等攤位都會比較緊融到各種景家包和攬明絬明明明熱季的景景，://因為建築作藥林等作雨景，://結紥過！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東吉嶼燈塔-2.jpg",
+      "ground_truth": "東吉嶼燈塔",
+      "response": "台的自然景觀和石門洞穴，這樣可以參觀的景觀和獨特的自然景觀。\n\n如果需要受到觀賞的細節或明顯的景觀細節，這將有顯著的遊客參觀，這樣是蘭�金的自然景氣。參觀時可以細細細珐，://周圍的自然景景景有適合的景觀。此",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/梧棲漁港-5.jpg",
+      "ground_truth": "梧棲漁港",
+      "response": "點著於蘭港的藝術設計和細雅的結構和豐富的建築風格與色彩調，通常有顯示的設計風格與圖案。\n\n如果有確定的確認，這確實是漁港的遊客應對成為參觀的細節。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明新書院-4.jpg",
+      "ground_truth": "明新書院",
+      "response": "台灣的傳統中式建築，為荷宮的廟額和建築風格，則是明顯的荷蘭景觀。參觀時期的經歷期細膔建築與莊的裝飾， Angeles膷��邊的景色而明細明明明歲月的氣�圍。\n\n如果需要對訪問的參觀參觀時也能查詢其他細膇廟的背景細節或建築細節。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園大溪老街-3.jpg",
+      "ground_truth": "桃園大溪老街",
+      "response": "台灣的景觀與自然景觀和相對遊艇，這確是台灣的自然景觀或受歡迎的遊景點。橋身有多條設計和建築，才能對於遊艇或參觀或遊艇。此外， aware去處是沿途的自然景景點和藝術作實明明明明細，這將是一次參觀的遊景點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/日月潭-4.jpg",
+      "ground_truth": "日月潭",
+      "response": "點山山水的湖景觀，.log 建艇以其水泊的色彩和明亮的氣�圍。\n3裡面有船隻的高山形建築和攬明略相輝映，這些都是遊艇的自然景色，也顯示出受歡迎的遊艇。週圍的自然景觀和植被明顯的景色相對相錯的景色。如果還需要進一步確認，.log上有明顯的遊艇或地遊玩的攤位和景色。不過，還可以查�頓遊艇或攤販或設施資源。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明新書院-5.jpg",
+      "ground_truth": "明新書院",
+      "response": "於建築細節的建築，這是赤崁樓的建築設計，將是一次歷史與建築的建築細細剪而成的裝飾。\n3裡板的柱子以及建築設計有明明建築和建築風格的景色，才能確認這是一個地點的景點。如果還有其他細膐廟和裝飾細膷�，則能幫重要的空間或建築細細細浮作。\n3說明，這是建築的設計都是了解當地的歷史與文化背景。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山慈祐宮-5.jpg",
+      "ground_truth": "松山慈祐宮",
+      "response": "台灣的宗教風格和燈飾，這是一個裝飾的中國典型的建築風格。周圍的燧飾設計和周圍有繁忙的裝飾和細膐，為這個受歡迎的活動。周圍的有寺廟與�邊的建築和裝飾相對相對。在此地中都充滿�域的媽祖信徒。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水漁人碼頭-5.jpg",
+      "ground_truth": "淡水漁人碼頭",
+      "response": "點觀明夕陽的夕陽景觀，將是黃色或黃色條條。周圍的景色都有明顯的燈光和裝飾，沒有明顯的細浪狀或標誌來確是當地的美景。如果需要確認有會更加充實或參觀，://週末或其他地標元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林默娘公園-5.jpg",
+      "ground_truth": "林默娘公園",
+      "response": "台中港觀艇，這是景觀的遊景觀， Angeles頭藝品的元素，這樣會有助於選擇的藝術氛圍和活動。遊客這個參觀時期的選擇。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/檜意森活村-1.jpg",
+      "ground_truth": "檜意森活村",
+      "response": "顯著建築的設計和建築特色，這也是位於遊觀和周圍的自然景景環境。周圍環境有廣的自然景氣，方便參觀於參觀時期的活動。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/梧棲漁港-2.jpg",
+      "ground_truth": "梧棲漁港",
+      "response": "點戶外結構的風格與遊觀景點。由於在黃色的高處可能是熱氣條，成為熱門的趣氣�圍。\n\n參觀周圍的特色明顯的氣�圍與表明細明顯的景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林本源園邸-5.jpg",
+      "ground_truth": "林本源園邸",
+      "response": "台灣的臺南的建築特色和建築的庭院，這是庭園的傳統建築風格相而紋而聞名的景觀。周圍有明顯的庭園，將成為遊客參觀的參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗後砲臺-2.jpg",
+      "ground_truth": "旗後砲臺",
+      "response": "台灣的砲臺建築的建築和建築特色，將有可能是保護的古炮技術或細細刻而明顯的圖中元素，這樣的設計是重要的空間。參觀時需要確認，這樣的景點名稱，這將是荷蘭的重要性或景點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東海大學路思義教堂-4.jpg",
+      "ground_truth": "東海大學路思義教堂",
+      "response": "點建築的建築特色如明建築或表面設計的建築設計，明顯的人條條條條條條條紋或作品，會有明良好的結構或建築性。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/日月潭-2.jpg",
+      "ground_truth": "日月潭",
+      "response": "台灣的山景景觀，://周圍有明顯的自然景氣或建築，將有特別的遊艇或區域。週圍的自然景色也可以受日落時分。這次的景色都適合拍攝的遊艇或攤位。遊艇以其獨特的自然景景色，才能更深入地享受農流的寧靜與自然景氣。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/武嶺-1.jpg",
+      "ground_truth": "武嶺",
+      "response": "台灣的景觀與自然景觀，://天氣晴朗的雲層和雲層中衣和雲層的雲條，才顯示有些明輝剷的雲條。\n\n如果需要確認實需要計劃參觀的參觀計劃，這樣可以更深入地轉乘到最寧靜的氛圍與景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/橋頭糖廠-5.jpg",
+      "ground_truth": "橋頭糖廠",
+      "response": "台灣的建築特色與古蹟的建築，.swing雅剪整�凝柱圍成的痕跡，將受到歷史與文化背景或文化氣�圍。\n3後圍細有明明復古的裝飾與建築，這是歷史意義的重要遺址或歷史悠久的氣�圍。\n3裡面較受歡迎的戶外景觀，這將是參觀經歷的意義。參觀於赤崁樓的藝術設計和周圍的綠色植�遭優美的景色！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗後砲臺-4.jpg",
+      "ground_truth": "旗後砲臺",
+      "response": "點石門的結構，歡迎到砲台的自然景景景建築，會有更明隆的結構和景色。\n\n由於這個景點的結構和建築細節，才能確認，這是參觀於保護地點的重要資源或參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園大溪老街-5.jpg",
+      "ground_truth": "桃園大溪老街",
+      "response": "台灣的車子設計及明顯的建築細牌，這是一個豐富的文化景觀。牌匞和拱門的設計而有顯示的圖片。\n\n如果需要參觀的參觀圖案或明顯的細節，://周圍環境優雅的細膷結構與景色相輝映。周圍有明顯的細膐飾和裝飾細雅的細膷，.FormsA\n如果您有其他明顯的遊客， encouraged說明，這個地點是一家重要的景點與獨特的莊習與細雅而明明明明而言。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗山車站-2.jpg",
+      "ground_truth": "旗山車站",
+      "response": "搭配綠色的建築和建築，為典雅的細細條條條條條，這是傳統的建築細雅而的元素。\n3個建築細節給人相對參觀的細節，顯示這個景觀的設計與自然景色。赤崁樓\n3希望這個景觀都能顯得明明景的細細剪成，適合遊玩的氛圍。在參觀時期前往，這參觀過行行。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朝日溫泉-2.jpg",
+      "ground_truth": "朝日溫泉",
+      "response": "對於想參觀點於參觀時， versa\n對於於於酒店的遊旺台會更有具體的參觀體驗，這樣可以對於宜蘭的氣狀況。此除了計劃參觀行程，://周圍有明顯的裝飾和景色，://參觀經過參觀行車， Angeles膇作相成，這座都是360飯店的藝術氛圍。此若有其他明確的話，.swing\n3. : / - 溫итиT:00\n5anel:00-wan::B::B/-wanan:00- :00:00- 確wf\n0 RotationC:-B30罬飯店\n30泡ити\n5時期節abled\nelman報松明酒店\n- \n4門景有20台的選擇，://219廟- :00\nelman-B:- 300- 確askan\nelmanan\n如果計劃於周圍的交通明顯明明明明明明明明明明明明明明地明顯的表明明明明明地明確的遊客可以100Bh KrálG:30能獲得更明確的景色.如果要說到明明明明地參加導- :00\n如果要能更深入地體- :--:00,-00:--:--00:-00::--:--:--300:------:--:--- Lux:-------:---/:- Adults:-UF- Adults明明明明明明明明明明明明明明地結---ンス\n如果要遇--:---:--elman:-0anel:-說明明明明明明明明明明明地面的地標-----:-----:--olo--:-:--:---:------------:-:----/-elman-----::-::-300---::-议-------:-UF-elman-19anel:-borg\nelman호台\nborg\n如果askan能360",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗山車站-5.jpg",
+      "ground_truth": "旗山車站",
+      "response": "顯示這個景觀的車輛和遊區域，將有助於確認這裡。如果需要參觀的細修或景觀圖案， AngelesOh上有明明明明明年的設計和特別展輸作或展示區的景觀。此若有遊玩或展區的參觀，.swingou\n00 00\"\n如果您計劃參觀周圍的景觀或設施，://週邊的景觀都充滿足的自然景氣。此由參觀行行行走或參觀行程，://台部鐵線5台1010-  00\n0年09BBing: B 00aanTanSh53h- Dvanan10S-6AhR: A B- 3:00等都能獲得更深的遊�區或主題地遊玩行走。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山文創園區-1.jpg",
+      "ground_truth": "松山文創園區",
+      "response": "對於想參觀臺中的遊客，\n對於於顯示，這是台灣的建築的景觀會有特別的公共主題或活動。此遊客可以在參觀周邊的公共空間或周圍的建築設計，因為建築設計會有不同的展�邊，這是建築的結合設計和休息景設計，這是該地點的獨特性和獨特的公共景觀。若有其他明顯的設計細節或地點，://週末或攬明近地參觀行程，://對於遊客可以參加導- Cop廟-ike都設有趣-AMY /B\n5時說B\n3anel\n3時期\n3位遊- \n3時成到購買過憐的絬chal或活動-明顯的明顯！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山慈祐宮-4.jpg",
+      "ground_truth": "松山慈祐宮",
+      "response": "點燈和裝飾，這是一個明顯的參拜元素，明顯的傳統建築風格和莊�祥和的氣�圍。\n3說明：\n3說明，這是一個宗教節日，這可能是廟宇的典雅氣力節，這是廟宇的廟宇，.swing浮雕等都是台灣的信仰氛圍。\n\n3說明都是信徒的宗教習俗， Angelesungdomer”調整明明明明彷，這是重要的信徒等重要信徒的設計。此注意明明明宗宮的宗教習俗或參拜，://保持參拜的參觀。此了解其歷史與建築和建築的細�圍，這樣能更深入地理解更多的參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水漾森林-2.jpg",
+      "ground_truth": "水漾森林",
+      "response": "對於想要參觀陽明山的遊旺水，.swing工藝的景色都非常適的登水變化，://周圍有植被和植�圍的植�圍和植被和自然景色，這些都是水林的自然景觀。遊客應該是保護地區的遊�山�山景，://由於水流過下變化的絕佳差異。如果有確對對蘭族的參觀解說，.對計劃於保護遊-olo林區域，://如果需要更深入地攬差能享受戶受自然的自然景景作力。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明志書院-3.jpg",
+      "ground_truth": "明志書院",
+      "response": "台灣的建築外觀和明顯的建築與圖案，這會是一個常錯的建築或展現作的參觀。\n\n對於計劃參觀於台灣的廟殿設計，://周圍環境的細膷�過和參觀的細節，://參觀時可以更深入地細細細細細年建築細膐匯殿結構，://周圍還有明顯的細品味與建築風格的景觀。參觀時可以在參觀期期期期間期會期，這裡的設計融为參觀的參觀體驗。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園石門水庫-4.jpg",
+      "ground_truth": "桃園石門水庫",
+      "response": "背景水域的景色會有較多的自然景景，成為相對自然景的自然景景景區，並且有許多自然氣息或水庫的細�陵。岸邊的景色相輝映，則相成為受歡迎的遊艇或景觀的自然景景景。如果需要確定或查�於高水地區的遊玩中心或設施， Angelesaond下相有水流和植�圍和景象。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林默娘公園-3.jpg",
+      "ground_truth": "林默娘公園",
+      "response": "圖片中建築的設計和燁花結構，特別是在燶球或藝術裝置的公共藝術裝置和裝飾性，將是一個受歡迎的遊客。參觀時能夠更深入地參觀的參觀體驗。如果有更多的資源和表作設細條�克，將有參觀的解說或導�圍作。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園大溪老街-4.jpg",
+      "ground_truth": "桃園大溪老街",
+      "response": "點遊， commonly憩過時期，這是一個景觀的遊和環境，這是園區的重要景點會更有意義。周圍的環境細修，這可能是園區的歷史建築或地點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水-3.jpg",
+      "ground_truth": "淡水",
+      "response": "台北市的淡水碼頭，這是沿海的市舊建築，營造出相當寧靜的氣�圍。\n對於圖片中的景觀是沿著都市的碼頭，方便遊艇，://周圍的自然景色相輝映，明顯的畫面的雲層元素。因此，除了遊艇過艇或設有意魚�頭的好去處。",
+      "is_correct": true
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山慈祐宮-1.jpg",
+      "ground_truth": "松山慈祐宮",
+      "response": "顯示的建築特色與建築特色，才能參觀的參觀過參觀的話，://周圍有其他雕刻和雕塑的雕塑，通常會有受歡迎的慶典和節慶氛圍！祐宮的燈飾和周圍景色相輝映，方便參觀參拜。此對於信徒參拜儀爐或選擇撐作設有�域的細膷�及收�邊的結構。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/梧棲漁港-1.jpg",
+      "ground_truth": "梧棲漁港",
+      "response": "顯示的魚船或船�水面來，這是一個魚魚的細膔，將因無遊艇周圍的海面和建築細浪的氛圍。\n3遊客在參觀經過停魚或高魚碼上活動，://周圍有建築和自然景景設施的形狀與結構等相對相受相輝映。\n\n4個受歡迎的氛圍和浪漫結構相對相對明近明歡景，可能是漁業或地標的細語！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水漁人碼頭-3.jpg",
+      "ground_truth": "淡水漁人碼頭",
+      "response": "點周圍的綠色氣次力力，會是沿著海浪的結構和結構，這樣可以充滿自然氣息的氣�圍和景色。周圍有明顯的景色和裝飾，這也是高雄的重要地形之一或重要的建築細膬。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朝日溫泉-5.jpg",
+      "ground_truth": "朝日溫泉",
+      "response": "圖片的風景， versa，說明是在戶外的溫泉和設施中。在週邊中還有一個戶外的遊�區區域，明顯顯示較安全的自然景氣。如果需要確認這是墶�邊的自然景景裝飾， Angelesananh石頭，這樣能明顯的遊玩。此外， 去處有趣的自然景景裝飾和裝飾作設條��圍。週圍的自然景色以便於遊玩時期！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水漾森林-1.jpg",
+      "ground_truth": "水漾森林",
+      "response": "點森林沿水的高山水和樹林，ozyand枯木，才能是一次受到高山的森林景色或自然景氣。\n\n如果計劃參與遊�山國家自然以保護過參觀的結構與裝備。遊客應該對於水圍的登水和登山裝備，也可能會有更深的氣�圍和自然景景，這會是一次受歡迎的遊玩和空林結構，://次過過過，以保護安全和自然之美。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園石門水庫-1.jpg",
+      "ground_truth": "桃園石門水庫",
+      "response": "點建築的景色來說，這樣可以受到水流的水域和水流，將會是遊�山水的自然景景氣。周圍的植被以及植被周圍的綠色植�圍和植被的植�圍等表明明這個景觀會有明顯的自然景景元素。參觀於水上資源的遊客，://周圍有樹林和綠色植被以及自然景景過去，://周圍有植�遭的樹葉，成為受陽明�陵等安全。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山文創園區-4.jpg",
+      "ground_truth": "松山文創園區",
+      "response": "場景顯得明顯的公共空間和樹木圍花，將是建築的自然景景景景作作為。\n\n如果計劃參觀的細節或表明明是參觀的遊客參觀的圖中，://周圍有明顯的綠植和植�圍和植物，這樣可以更深入地理解其的自然景氣與元素。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水晶教堂-5.jpg",
+      "ground_truth": "水晶教堂",
+      "response": "的場景符合台灣的藝術風格的設計與元素。此場景都會的參觀時間或是台中公園的公車和拍攝。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/新竹車站-4.jpg",
+      "ground_truth": "新竹車站",
+      "response": "點有明顯的標誌和表明，這是一個顯示的設計設計與公共氣�圍。\n3裡面還有明顯的設計和現代風格，明顯明明熱門的設計細條設計和建築風格吸引過撐的美感。\n3裡板上還有明顯的廣場，.log\n3裡面陳列在空間中還有建築的柱子， Angelesung\n3個細節都顯示這些地點的指引，://台南車站\n3個地方經過過過或明顯的遊客，://台北車站\n3次細細條板和裝飾的細細�栽和簡約的參觀能購作參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/梧棲漁港-3.jpg",
+      "ground_truth": "梧棲漁港",
+      "response": "附近有畫的戶外結構，成為遊客使用的戶外廣場設計來說，這樣能參觀的參觀圖案或遊客。周圍有明顯的圖像和周圍的藝術元素，這樣可以確定。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗後砲臺-1.jpg",
+      "ground_truth": "旗後砲臺",
+      "response": "顯示，這可能是一個砲台的建築細節，會有更多的景色或元素或自然景景的景觀，方便參觀參觀。如果有興趣的遊艇或參觀經歷，.log條成期節期，這是一個受歡迎的遊玩作經融。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朱銘美術館-4.jpg",
+      "ground_truth": "朱銘美術館",
+      "response": "於位於台銶的公共空中，該作品的設計優美的自然景景景與藝術作品，將成為黃的藝術作品或明顯的遊客前來參觀。周圍的自然景景藝術與自然景觀，可能是展的公共空間或活動或講日的戶外空間。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/景美夜市-3.jpg",
+      "ground_truth": "景美夜市",
+      "response": "點熱鬧的攤販和商品，顯示這是一個熱鬧的攤販，顯示出這個熱鬧的氛圍。\n\n如果您計劃參觀\n\n對於想參觀淡水的遊客， earsB 00asan攤- /ananh攤販\n如果有更多的攤販和攤販的攬明顯，這是當地的攤販或攬射的好去處。如果有收�邊的細節或攤位，這樣可以更深入地體驗當地的魷士氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/武嶺-4.jpg",
+      "ground_truth": "武嶺",
+      "response": "圖片顯示的景色明顯的自然景色，特別是雲層過往。周圍的自然景觀變雲，將受到較高的氣層。\n對於計劃參觀於天氣或需求，://邊�湖過過，.Forms列車過過或需求。此查看天氣�境變，.logondh的道路相對相適程度。如果需要確認。如果需要計劃參觀行程，‍要注意确认。參觀於高峰期或參觀行行程， respected紀念過應遇到適的農業文化和景觀-00ip000-00\n如果要確認到錯過， interested說期May Bh53DalhhDhh等堬 minh10Th公路過行走，並在夏季到訪B-ingBonSRh脠等選Nullable植�邊緣�hh上有適合登自然景空 TahoeG�邊花節相(tindvh積整整整雲h�陵至公路，://continent備受歡迎的遊-Celical-olo06. 雦 nadhh�上過哦！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/新竹車站-3.jpg",
+      "ground_truth": "新竹車站",
+      "response": "眾顯示的車台邊景觀，並有更多細節或建築的元素，://周圍的環境相畫明明明畫的明顯細台站或購區域。周圍的車輛，這樣能看到更多的車站及明顯的重要氣候氣力。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/武嶺-5.jpg",
+      "ground_truth": "武嶺",
+      "response": "台灣的武嶺過，這類自然景觀的視野相對。\n\n這個景觀顯示的景色顯得顯得更加靜和空氣。\n對於遊客應該可以選擇在颭月的遊旺季期間，.swing的勢變化，.logBand，這樣能體驗當地的氣氣力。此受歡迎�部的登雲空變和高峰時差變化。參觀應注意安全。",
+      "is_correct": true
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林百貨-3.jpg",
+      "ground_truth": "林百貨",
+      "response": "點建築的細節和周圍的建築風格和建築的圖案，才能參觀當地的自然景觀或裝飾細品。\n3參觀圖中確認：\n如果您需要受到尋找的參觀資源或展區的參觀，或將能能更深入地體驗這個文化的參觀。參觀周圍的自然景觀，://說明比較放鬊，://週末和景色會更容易家庭，建-  25 : :30- : B:30- :00:00\n如果有興趣的選擇會有明顯的趣味性和裝飾。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東吉嶼燈塔-3.jpg",
+      "ground_truth": "東吉嶼燈塔",
+      "response": "圍有明明燁的燈塔和招牌，這是一個重要的景觀和自然景觀而將景觀和相對的設計。周圍的自然景觀和自然景色，這將是受到高大的自然景景性和明智的景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水-4.jpg",
+      "ground_truth": "淡水",
+      "response": "點著建築的建築細節，這是一個建築，建艇或現代的浪景設計的樣作氣�圍和浪色和自然景氣。週邊的建築相融於購意業的重要與氛圍。參觀時可以確認這裡的商店作設施作。如果有更多的圖 年遊或景點會更有明顯的細�圍或景觀細修。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水晶教堂-3.jpg",
+      "ground_truth": "水晶教堂",
+      "response": "眾多參觀過參觀，://對於參觀周圍的自然景觀與結構，這樣能充實參觀的靈態氛圍與建築設計。此",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/景美夜市-1.jpg",
+      "ground_truth": "景美夜市",
+      "response": "圖片的招牌和建築裝飾的建築和店鋪的樣澤調，僅有可能是一個遊�門的商店或攤販攬明復的招牌。\n\n由於這些元素無明明明的細細膷和商店店，這是商店的店鋪設的招牌與招牌。由於這裡都有明顯的店鋪和標示，這也是商業的熱鬧氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗後砲臺-5.jpg",
+      "ground_truth": "旗後砲臺",
+      "response": "點長砲臺周圍景觀，為結構的畫面，這是參觀於自然景觀的景觀和自然景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/橋頭糖廠-2.jpg",
+      "ground_truth": "橋頭糖廠",
+      "response": "台灣的自然景觀和自然景觀的建築，會有更多的視覺質裝飾和設計的建築風格。周圍環境也有明顯的庭院或自然景空圍，將有整自然的氣�圍和靜力。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山文創園區-5.jpg",
+      "ground_truth": "松山文創園區",
+      "response": "台灣歷史建築的特色，這確是參觀的文創建築的景觀或建築細節。此外， estate頭�質結構和建築風格，.log 30燭車頭，-old條條條條條條條��邊，.log條條條��邊的建築，這是台灣的重要性元素。不過，由於這裡可能是工業的公共空間，或是他們的公共空間或明確細語而言。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/武嶺-2.jpg",
+      "ground_truth": "武嶺",
+      "response": "點山的高山景景觀，這是高山天空的氣變與自然景景色，並且將有遊�族的�境環境。\n\n如果您計劃參觀應該可以參觀的參觀體驗。如果有更多的遊旺季或收條的景色，這應該對於高峰時期的遊客。同時，參觀時可以�線登登山鞋或規定，://攜帶相對緊登景過去，://希望這次的地理之安全！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/明新書院-3.jpg",
+      "ground_truth": "明新書院",
+      "response": "眾參觀國立台灣的建築細�凝花裝飾，將在參觀的建築細�陵，將會是明顯的裝飾與建築風格。周圍有明細明明明明的牌匾與元素和宗教文化氛圍，方便遊客參拜。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水漁人碼頭-2.jpg",
+      "ground_truth": "淡水漁人碼頭",
+      "response": "顯現的建築和周圍的燧氣�圍，成為高夕夕夕日的氛圍，這樣是一條樸啡的浪氣與設計。此外，://周圍的建築細雅燢，://岸邊有燇紐的浪花，://夕陽景色相輝映。岸邊有浪漫的雲紐，增添優美的氛圍。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東海大學路思義教堂-5.jpg",
+      "ground_truth": "東海大學路思義教堂",
+      "response": "圍廣場的建築，.log **細膬的步道，將會適的戶外活動或參觀體驗。\n對於於參觀性或設置，://對於結合應該對於參觀的參觀或講留。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/景美夜市-5.jpg",
+      "ground_truth": "景美夜市",
+      "response": "台灣的攤販都可能是攤販的攤販和攤販，這樣能提供了熱鬧的氣�圍。\n3攤販販在夜市攤販，顯示出熱鬧的氣�圍。\n\n3從細節，這確實是台灣的夜市景觀中有明顯的攤販攤販的攤販和攤販，需要進一步確認地點。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水-2.jpg",
+      "ground_truth": "淡水",
+      "response": "：\n\n對於希望參觀周邊的景觀和建築細節的細節或建築細細細浮，成為台灣的重要性景觀。遊客還有特別展或手爬廟的視角。此外， hundredBaiai- 10 30處結構\n3參觀於台北的重要景觀和明顯的自然景景景設計。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園石門水庫-3.jpg",
+      "ground_truth": "桃園石門水庫",
+      "response": "點建築中的建築與水流的水水庫和設計，才堬緩的水�陵的水庫結構和景色。在畫面上都有些明近而的步道。周圍環境明顯顯示到自然景觀，並不足以確定是否為台灣的水流，://周圍的自然景景點，將成為更深入地確認地經常明顯的遊艇或參觀更充實地參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/水漾森林-3.jpg",
+      "ground_truth": "水漾森林",
+      "response": "的地形和自然氣條，這是水林林林的自然景色，- 景色偏深，該地區是太陽的自然氣條而。\n如果需要參觀周圍的自然景氣或表明攤位的自然景氣。此同時，://周圍植被是植物結構和自然景景點，可能是當地的登景色或受歡受水和寧靜的水與美景。此注意保護�山的氣�圍以確定其地體驗到更適的登樹變和景色。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/橋頭糖廠-1.jpg",
+      "ground_truth": "橋頭糖廠",
+      "response": "台灣的建築特色或景點細節，會有更明顯的建築或設計和裝飾的藝廠和主題的景觀。由於園廠的工業設作和整體而堷結構和趣味的作品，營造出相錯的氣�圍。\n\n如果需要確認，://周圍的自然景景細細剪成整修，這個都是一個地方地點。如果有更多資源或解說， often可以查閒參觀行走以避免參觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林本源園邸-2.jpg",
+      "ground_truth": "林本源園邸",
+      "response": "對於想參觀周圍的遊旺書院，://周圍的庭院設計相適的細語而言，這樣能參觀於周圍的藝術和景觀。參觀時可以對於參觀的參觀理念。此外，- 說明，這是台灣的重要文化地點，.swing:B 說明，這是了解赤崁樓的歷史與建築。遊客也可以在參觀時到訪或休息，://夕陽景觀都適-AMa. �湖\n5說明，這是台灣的重要性和文化意義。此除了參觀經過留意公場/\n5如果還有興趣的遊旺園交融，://erton院邸\n4如果有興趣- �邊的景觀- �昌成功，這是參觀經常作實-B\n5說B: BB5:00院邸\n0年年時期時期期，://如果有興趣的遊-00-36010B邊緞性- �殿作過-AM/年明近時期的人成就-ike-azar, 碼� iverse\n4soles結chal\n4說明這座都是歷-說明。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山慈祐宮-2.jpg",
+      "ground_truth": "松山慈祐宮",
+      "response": "台灣的台灣的廟宇設計，這樣是傳統的建築風格與建築設計。周圍的�邊顯有明明的細雅形雕塑和雕飾裝飾，將受到當地的元素和建築的景色。周圍有明顯的細膐飾，通常是廟宇的寺廟結構，成為周圍的重要空間。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/景美夜市-4.jpg",
+      "ground_truth": "景美夜市",
+      "response": "台灣的台灣的廟圍，這類廟宇的細膭，://周圍還有彩花裝飾的浮花，將是熱慾祷�的裝飾和明靈氣力。\n3裡板上還有一個受明明明明明圍的建築與裝飾，這是常舉行的廟額，://周圍景觀明顯的細膊結構，這是廟宇的裝飾和宗教習俗，也是參拜時期的慶典氣�圍。\n如果您有其他明確的細細膬建築作紋或細�額來訪，這樣可以更深入地查詢進一步的參拜或參拜參拜。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水漁人碼頭-4.jpg",
+      "ground_truth": "淡水漁人碼頭",
+      "response": "點著建築的建築和建築，為當地的廣場設計，這是酒店的重要之期的設計，將會有特別的設計和設計細膷�的裝飾性和柱子，顯示這個充滿歷史和主。\n\n如果你有對讀參觀的細護或選擇參觀行程。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山文創園區-2.jpg",
+      "ground_truth": "松山文創園區",
+      "response": "台灣的宜蘭設計，顯示這是一個受歡迎的遊�部資訊，顯得特別相錯的元素，這個景觀都可能是校園內的設計和主題或公車。周圍也有明顯的自然景景細膷和樹葉植�圍，://周圍有綠植葉�邊的綠樹，營造家庭休息或自然景設施。若有確定，建議遊客查�於周邊的環境理態或休息設施，了解當地的文化與文化背景。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/桃園石門水庫-2.jpg",
+      "ground_truth": "桃園石門水庫",
+      "response": "台灣的水域景觀和自然景觀的景色，將是一個受歡迎的遊�區。岸邊的植被和周圍的景色相對充力而過。周圍有綠色植被和植�圍，這會是位於台灣的自然景觀之一。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朱銘美術館-2.jpg",
+      "ground_truth": "朱銘美術館",
+      "response": "點著開放的公共景色和簡約的氛圍，將是一個充足的開放氛圍和植�圍和植�圍的植�圍，會比較是戶外空林的戶外景景結構。周圍有綠色植被和綠樹的植物，:\\/\\/前景還有明細的樹葉，適合戶外或公共參觀經過！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/旗後砲臺-3.jpg",
+      "ground_truth": "旗後砲臺",
+      "response": "點細節的建築和景觀設計，://景觀顯示這個景觀的景色而造成的圖中都都相對對夕陽的明近明隆海浪或建築。受歡迎的景觀而進行遊艇，.log浪過，‍景部都都是明顯的遊艇區域。此外， hundred景部還有明顯的遊�岸和建築作為戶外攤販。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/橋頭糖廠-4.jpg",
+      "ground_truth": "橋頭糖廠",
+      "response": "遊觀業車站的建築，方便遊玩的景觀和植�圍，這確是其他與歷史建築或工作坊的建築風格。不過，無說說明可能會更充實而進行的遊�廠或工作坊，這將可能是熱門的歷史元素和工業化風格的照片。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林百貨-1.jpg",
+      "ground_truth": "林百貨",
+      "response": "點細膬的建築設計和建築，則有與招牌和招牌，這是個熱門的建築風格。\n\n由於這裡還有明顯的招牌和設計細節，吸 - 年趣都有顯眼的招牌，.log 經過建築的細細��邊柱。\n3遊客都是台南的公共中心\n如果你計劃參觀時可以查詢當地的活動或參觀的設施，://如果有更多的選擇或明顯的商品以確定。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/檜意森活村-4.jpg",
+      "ground_truth": "檜意森活村",
+      "response": "台灣歷史建築和建築的建築風格相有相對的建築與設計，將有眾錯的遊玩或相關資遊玩中，會有更多的景作性和設置的表作規節。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/新竹車站-2.jpg",
+      "ground_truth": "新竹車站",
+      "response": "對於想參觀台中車站的遊客， able車站附近的竹門結構\n對於於交通樞紐的遊旺台，://周邊有很多明顯的氛圍和裝飾。此外，- : : - ::00aung\n- : ::::::- \n總結- :::0時說明，可以在參觀時明顯時間在車站\n如果有其他明顯的細節或者明顯的細細��邊明明明明明明建築的細節。不過-對於計劃轉乘公車或周邊景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東吉嶼燈塔-1.jpg",
+      "ground_truth": "東吉嶼燈塔",
+      "response": "顯示的燈塔和明顯的建築細�構狀，可能會受到燈塔的自然景景與氣�圍。\n3周圍環境明顯的結構相對相對明亮的氣條。此外，將是遊�岸的自然景景之一，仍成為旅遊的遊�岸或紀景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/東海大學路思義教堂-3.jpg",
+      "ground_truth": "東海大學路思義教堂",
+      "response": "台灣的設計與建築外觀和建築的細膐裝飾，這會讓可能是台灣的重要的空間。\n\n如果計劃參觀的細修件，.log 對於參觀後可以確定參觀行車或講話，.log\n對於於參觀經常期的遊客， likely可以先參觀周邊的導- 參觀行公場5\n對於於遊客堷交相彷，這樣能更深入地理解這個景點的重要性和意義。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林默娘公園-2.jpg",
+      "ground_truth": "林默娘公園",
+      "response": "點著明隆的公共景觀，://周圍有植被與花��圍的自然景氣相輝映，這是位於台灣的公共空氣或參觀的重要性。\n\n如果需要確認實會，://如果您要確定實說明會因為受到靈氣狀況。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/朱銘美術館-3.jpg",
+      "ground_truth": "朱銘美術館",
+      "response": "顯示的設計設計和現代建築風格，仍有明護的遊�圍結構和建築的景色。如果還有明展或展區的建築或表明明受歡受自然的�澤與空林景觀。若還需要確認該地參觀的參觀圖中應該可以參觀行程。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/檜意森活村-3.jpg",
+      "ground_truth": "檜意森活村",
+      "response": "台灣的台灣文產園的建築特色，這是荷蘭傳統的建築和自然景氣。周圍還有其他樹木和自然景氣，通常會有相對的自然景氣力。這個景觀都可能會舉辦的文化或文化中心，這是保存良好的時期期的重要景觀。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水老街-2.jpg",
+      "ground_truth": "淡水老街",
+      "response": "顯示的是淡水的河岸景色，可能是沿湖的夕陽景色。如果有參觀的話或明顯的圖中明明時期地點，這樣會有更多的建築細浪建築和自然景景觀。由於蘭港可能是位於台灣的藝術景景區，如周圍的建築和景色。如果需要進一步確認， suggesting說明這場景明明明適的遊艇或工作坊！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/林本源園邸-1.jpg",
+      "ground_truth": "林本源園邸",
+      "response": "點不明是著明歷的建築和裝飾和自然環境的元素，融合了傳統的設計和文化景色，將有經驗的歷史氣力氛圍。\n3說明都是台灣的建築，則可能是屋頭的古蹟與莊�洛次的空間。赤崁樓以其歷史元素和美景的設計而言，可以更深入地理解這個自然景觀的自然景景與區域。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/檜意森活村-2.jpg",
+      "ground_truth": "檜意森活村",
+      "response": "台灣日本傳統的建築和自然景景觀，並不錯過的建築或展現。週和自然環境的圖中確認，這裡是其常有藝術元素的建築和自然景景元素。\n\n如果您還可以確認這個景點的遊客，://如果需要確定或關於園區的參觀期更加充實和參觀。參觀時可以在參觀過行程，://若有藝術與景區細細細洗�邊的景色，://參加導--ondai\n3說說說，這樣能更加充實和參觀作業-會更加充實-00. 參觀，還可以享受園區的藝術氛圍- 確--ondYOT\n如果有要遊-總-B%應該可以選- �金廠\n5參觀時到訪問的參觀定期定期地點！",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/日月潭-1.jpg",
+      "ground_truth": "日月潭",
+      "response": "點自然景觀的景觀，才應成為湖脊的景色，因為水上以水流的湖脊和水流，與湖泊的自然景色和自然景景。絕對是湖平藍的自然景景景，會有更多的自然景景景和遊艇。在整個景點。如果有更多圖被顯示，這是受歡迎的遊�山景。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/松山文創園區-3.jpg",
+      "ground_truth": "松山文創園區",
+      "response": "顯示明顯的建築風格和建築設計，建議可以到到建築細條條次的建築細條次，這樣可以確定期會舉行的明顯或建築細膷�的空間或工作。\n\n如果需要確定或者需要參觀的細節或者更深入地細節。",
+      "is_correct": false
+    },
+    {
+      "image_path": "Distributed_Images/folder_5/淡水漁人碼頭-1.jpg",
+      "ground_truth": "淡水漁人碼頭",
+      "response": "點平夕夕夕夕夕夕夕夕夕夕夕夕夕夕夕夕船時。此希望參觀行艇或高夕夕夕夕夕夕夕夕夕燇的夕夕景景，://岸邊景色有些相對的氣夕夕夕夕陽景觀。參觀時可以選擇訪附近的商業作要觀艇。如果需要參觀或周圍的資源資活動， Angeles父碼頭碼等相堸。",
+      "is_correct": false
+    }
+  ],
+  "correct_count": 3,
+  "total_count": 142,
+  "accuracy": 2.112676056338028,
+  "timestamp": "2024-12-03 13:04:46"
+}
