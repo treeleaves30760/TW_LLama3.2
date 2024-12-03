@@ -56,8 +56,8 @@ def process_single_image(image_path: str) -> PIL_Image.Image:
 
 def generate_text_from_image(model, processor, image, prompt_text, temperature, top_p, device):
     try:
-        combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。所有對話請用繁體中文進行，請嚴格按照使用者的提問進行回覆。<|end_of_text|>
-<|start_header_id|>user<|end_header_id|>{prompt_text}<|image|><|eot_id|>
+        combined_prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>你是一個旅遊專家，能十分準確的分析圖片中的景點。分析景點時請先列出這個照片的細節，再推測這是那個景點。所有對話請用繁體中文進行。<|end_of_text|>
+<|start_header_id|>user<|end_header_id|><|image|>{prompt_text}<|eot_id|>
 <|start_header_id|>assistant<|end_header_id|>"""
 
         inputs = processor(
