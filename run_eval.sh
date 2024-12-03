@@ -55,7 +55,7 @@ if [ "$FOLDER_COUNT" -ne 8 ]; then
 fi
 
 # Create results directory
-RESULTS_DIR="evaluation_results_$(date +%Y%m%d_%H%M%S)"
+RESULTS_DIR="results/evaluation_results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR"
 
 # Log file for the script
