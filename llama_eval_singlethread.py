@@ -133,7 +133,7 @@ def evaluate_folder(args):
                 # Get ground truth from image path
                 # File name: ~/TW_LLama3.2/Distributed_Images/folder_1/921地震教育園區-1.jpg
                 # Location: 921地震教育園區
-                location_name = str(image_path).split('Distributed_Images/folder_')[1][2:].split('-')[0]
+                location_name = str(image_path).split('/folder_')[1][2:].split('-')[0]
                 
                 # Check if correct
                 is_correct = location_name in response
