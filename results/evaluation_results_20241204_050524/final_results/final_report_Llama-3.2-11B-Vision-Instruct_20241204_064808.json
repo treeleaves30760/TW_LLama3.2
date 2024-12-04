@@ -1,0 +1,67 @@
+{
+  "model_name": "Llama-3.2-11B-Vision-Instruct",
+  "timestamp": "2024-12-04 06:48:08",
+  "overall_results": {
+    "total_images": 11100,
+    "total_correct": 178,
+    "overall_accuracy": 1.6036036036036034
+  },
+  "folder_results": {
+    "folder_3": {
+      "gpu_id": 2,
+      "total_images": 1388,
+      "correct_predictions": 11,
+      "accuracy": 0.792507204610951,
+      "timestamp": "2024-12-04 06:44:31"
+    },
+    "folder_7": {
+      "gpu_id": 6,
+      "total_images": 1388,
+      "correct_predictions": 16,
+      "accuracy": 1.1527377521613833,
+      "timestamp": "2024-12-04 06:46:07"
+    },
+    "folder_5": {
+      "gpu_id": 4,
+      "total_images": 1388,
+      "correct_predictions": 7,
+      "accuracy": 0.5043227665706052,
+      "timestamp": "2024-12-04 06:45:23"
+    },
+    "folder_4": {
+      "gpu_id": 3,
+      "total_images": 1388,
+      "correct_predictions": 5,
+      "accuracy": 0.36023054755043227,
+      "timestamp": "2024-12-04 06:45:01"
+    },
+    "folder_1": {
+      "gpu_id": 0,
+      "total_images": 1388,
+      "correct_predictions": 61,
+      "accuracy": 4.394812680115274,
+      "timestamp": "2024-12-04 06:44:41"
+    },
+    "folder_8": {
+      "gpu_id": 7,
+      "total_images": 1384,
+      "correct_predictions": 8,
+      "accuracy": 0.5780346820809248,
+      "timestamp": "2024-12-04 06:43:44"
+    },
+    "folder_2": {
+      "gpu_id": 1,
+      "total_images": 1388,
+      "correct_predictions": 41,
+      "accuracy": 2.9538904899135447,
+      "timestamp": "2024-12-04 06:48:04"
+    },
+    "folder_6": {
+      "gpu_id": 5,
+      "total_images": 1388,
+      "correct_predictions": 29,
+      "accuracy": 2.089337175792507,
+      "timestamp": "2024-12-04 06:47:50"
+    }
+  }
+}
