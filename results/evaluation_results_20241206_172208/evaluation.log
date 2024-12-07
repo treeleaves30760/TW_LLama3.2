@@ -1,0 +1,19 @@
+Starting evaluation at Fri Dec  6 17:22:08 CST 2024
+Model path: ../vslab_llama_recipe/checkpoints/mixdata_1e-5_firstepoch/
+Data root: Train_Images/
+Starting evaluation for folder_1 on GPU 0
+Started process 414797 for folder_1 on GPU 0
+Starting evaluation for folder_2 on GPU 1
+Started process 414800 for folder_2 on GPU 1
+Starting evaluation for folder_3 on GPU 2
+Started process 414802 for folder_3 on GPU 2
+Starting evaluation for folder_4 on GPU 3
+Started process 414804 for folder_4 on GPU 3
+Starting evaluation for folder_5 on GPU 4
+Started process 414806 for folder_5 on GPU 4
+Starting evaluation for folder_6 on GPU 5
+Started process 414808 for folder_6 on GPU 5
+Starting evaluation for folder_7 on GPU 6
+Started process 414810 for folder_7 on GPU 6
+Starting evaluation for folder_8 on GPU 7
+Started process 414812 for folder_8 on GPU 7

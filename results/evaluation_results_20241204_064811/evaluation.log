@@ -1,0 +1,30 @@
+Starting evaluation at Wed Dec  4 06:48:11 AM CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/andy/vslab_llama_recipe/hf_ckpt/fine-tuned-classify-lr1e-4-meta-llama/
+Data root: Distributed_Images/
+Starting evaluation for folder_1 on GPU 0
+Started process 1869481 for folder_1 on GPU 0
+Starting evaluation for folder_2 on GPU 1
+Started process 1869483 for folder_2 on GPU 1
+Starting evaluation for folder_3 on GPU 2
+Started process 1869485 for folder_3 on GPU 2
+Starting evaluation for folder_4 on GPU 3
+Started process 1869487 for folder_4 on GPU 3
+Starting evaluation for folder_5 on GPU 4
+Started process 1869489 for folder_5 on GPU 4
+Starting evaluation for folder_6 on GPU 5
+Started process 1869491 for folder_6 on GPU 5
+Starting evaluation for folder_7 on GPU 6
+Started process 1869493 for folder_7 on GPU 6
+Starting evaluation for folder_8 on GPU 7
+Started process 1869495 for folder_8 on GPU 7
+Process 1869481 completed with exit code 0
+Process 1869483 completed with exit code 0
+Process 1869485 completed with exit code 0
+Process 1869487 completed with exit code 0
+Process 1869489 completed with exit code 0
+Process 1869491 completed with exit code 0
+Process 1869493 completed with exit code 0
+Process 1869495 completed with exit code 0
+Final reports generated:
+- Markdown report: results/evaluation_results_20241204_064811/final_results/final_report_fine-tuned-classify-lr1e-4-meta-llama_20241204_071419.md
+- JSON report: results/evaluation_results_20241204_064811/final_results/final_report_fine-tuned-classify-lr1e-4-meta-llama_20241204_071419.json
