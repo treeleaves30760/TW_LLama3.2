@@ -40,6 +40,7 @@ def load_model_and_processor(model_path, device):
     
     model = model.eval()
     model = model.to(device)
+    model = torch.compile(model)
     
     return model, processor
 
