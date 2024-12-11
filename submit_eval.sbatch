@@ -8,13 +8,6 @@
 #SBATCH --output=slurm_%j.out          # 標準輸出文件
 #SBATCH --error=slurm_%j.err           # 標準錯誤文件
 
-# 載入需要的環境模組（根據你的系統配置調整）
-module load cuda/11.7
-module load python/3.9
-
-# 設置環境變數
-export PYTHONPATH=$PYTHONPATH:$(pwd)
-
 # 獲取命令行參數
 MODEL_PATH=$1
 DATA_ROOT=$2
