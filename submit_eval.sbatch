@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=llama_eval          # 作業名稱
 #SBATCH --nodes=1                      # 請求節點數
+#SBATCH --nodelist=cnode3-006           # 指定節點
 #SBATCH --ntasks-per-node=8            # 每個節點上的任務數(對應原本的8個資料夾)
 #SBATCH --cpus-per-task=1              # 每個任務使用的CPU核心數
 #SBATCH --gres=gpu:8                   # 請求8張GPU
