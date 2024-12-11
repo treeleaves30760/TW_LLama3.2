@@ -1,13 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=llama_eval          # 作業名稱
-#SBATCH --nodes=1                      # 請求節點數
+#SBATCH --job-name=llama_eval           # 作業名稱
+#SBATCH --nodes=1                       # 請求節點數
 #SBATCH --nodelist=cnode3-006           # 指定節點
-#SBATCH --ntasks-per-node=8            # 每個節點上的任務數(對應原本的8個資料夾)
-#SBATCH --cpus-per-task=1              # 每個任務使用的CPU核心數
-#SBATCH --gres=gpu:8                   # 請求8張GPU
-#SBATCH --time=24:00:00               # 最長執行時間
-#SBATCH --output=slurm_%j.out          # 標準輸出文件
-#SBATCH --error=slurm_%j.err           # 標準錯誤文件
+#SBATCH -p tp1-user                     # 指定分區
+#SBATCH --ntasks-per-node=8             # 每個節點上的任務數(對應原本的8個資料夾)
+#SBATCH --cpus-per-task=1               # 每個任務使用的CPU核心數
+#SBATCH --gres=gpu:8                    # 請求8張GPU
+#SBATCH --time=24:00:00                 # 最長執行時間
+#SBATCH --output=slurm_result/slurm_%j.out           # 標準輸出文件
+#SBATCH --error=slurm_result/slurm_%j.err            # 標準錯誤文件
 
 # 獲取命令行參數
 MODEL_PATH=$1
