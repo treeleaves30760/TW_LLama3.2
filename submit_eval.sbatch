@@ -4,7 +4,6 @@
 #SBATCH --ntasks-per-node=8            # 每個節點上的任務數(對應原本的8個資料夾)
 #SBATCH --cpus-per-task=1              # 每個任務使用的CPU核心數
 #SBATCH --gres=gpu:8                   # 請求8張GPU
-#SBATCH --mem=32G                      # 記憶體需求
 #SBATCH --time=24:00:00               # 最長執行時間
 #SBATCH --output=slurm_%j.out          # 標準輸出文件
 #SBATCH --error=slurm_%j.err           # 標準錯誤文件
