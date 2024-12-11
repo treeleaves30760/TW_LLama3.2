@@ -1,0 +1,30 @@
+Starting evaluation at Mon Dec  9 21:40:10 CST 2024
+Model path: ../vslab_llama_recipe/checkpoints/mixdata_1e-5_10epoch/
+Data root: Distributed_Images/
+Starting evaluation for folder_1 on GPU 0
+Started process 3040674 for folder_1 on GPU 0
+Starting evaluation for folder_2 on GPU 1
+Started process 3040676 for folder_2 on GPU 1
+Starting evaluation for folder_3 on GPU 2
+Started process 3040679 for folder_3 on GPU 2
+Starting evaluation for folder_4 on GPU 3
+Started process 3040681 for folder_4 on GPU 3
+Starting evaluation for folder_5 on GPU 4
+Started process 3040683 for folder_5 on GPU 4
+Starting evaluation for folder_6 on GPU 5
+Started process 3040685 for folder_6 on GPU 5
+Starting evaluation for folder_7 on GPU 6
+Started process 3040687 for folder_7 on GPU 6
+Starting evaluation for folder_8 on GPU 7
+Started process 3040689 for folder_8 on GPU 7
+Process 3040674 completed with exit code 0
+Process 3040676 completed with exit code 0
+Process 3040679 completed with exit code 0
+Process 3040681 completed with exit code 0
+Process 3040683 completed with exit code 0
+Process 3040685 completed with exit code 0
+Process 3040687 completed with exit code 0
+Process 3040689 completed with exit code 0
+Final reports generated:
+- Markdown report: results/evaluation_results_20241209_214010/final_results/final_report_mixdata_1e-5_10epoch_20241209_214944.md
+- JSON report: results/evaluation_results_20241209_214010/final_results/final_report_mixdata_1e-5_10epoch_20241209_214944.json
