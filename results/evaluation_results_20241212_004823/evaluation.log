@@ -1,0 +1,6 @@
+Starting evaluation at Thu Dec 12 12:48:23 AM CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/vslab_llama_recipe/checkpoints/mixdataset_1e-4_1vs1_5epoch
+Data root: Distributed_Images/
+Final reports generated:
+- Markdown report: results/evaluation_results_20241212_004823/final_results/final_report_mixdataset_1e-4_1vs1_5epoch_20241212_010647.md
+- JSON report: results/evaluation_results_20241212_004823/final_results/final_report_mixdataset_1e-4_1vs1_5epoch_20241212_010647.json

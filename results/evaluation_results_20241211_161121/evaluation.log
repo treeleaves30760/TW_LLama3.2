@@ -1,0 +1,6 @@
+Starting evaluation at Wed Dec 11 04:11:21 PM CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/andy/vslab_llama_recipe/hf_ckpt/fine-tuned-small-lr1e-4-meta-llama
+Data root: Distributed_Images/
+Final reports generated:
+- Markdown report: results/evaluation_results_20241211_161121/final_results/final_report_fine-tuned-small-lr1e-4-meta-llama_20241211_163435.md
+- JSON report: results/evaluation_results_20241211_161121/final_results/final_report_fine-tuned-small-lr1e-4-meta-llama_20241211_163435.json

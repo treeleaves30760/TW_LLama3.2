@@ -1,0 +1,67 @@
+{
+  "model_name": "fine-tuned-small-lr1e-4-meta-llama",
+  "timestamp": "2024-12-11 19:26:43",
+  "overall_results": {
+    "total_images": 11100,
+    "total_correct": 4403,
+    "overall_accuracy": 39.666666666666664
+  },
+  "folder_results": {
+    "folder_3": {
+      "gpu_id": 2,
+      "total_images": 1388,
+      "correct_predictions": 636,
+      "accuracy": 45.821325648414984,
+      "timestamp": "2024-12-11 19:26:40"
+    },
+    "folder_7": {
+      "gpu_id": 6,
+      "total_images": 1388,
+      "correct_predictions": 449,
+      "accuracy": 32.34870317002882,
+      "timestamp": "2024-12-11 19:14:18"
+    },
+    "folder_5": {
+      "gpu_id": 4,
+      "total_images": 1388,
+      "correct_predictions": 421,
+      "accuracy": 30.3314121037464,
+      "timestamp": "2024-12-11 19:18:05"
+    },
+    "folder_4": {
+      "gpu_id": 3,
+      "total_images": 1388,
+      "correct_predictions": 662,
+      "accuracy": 47.69452449567723,
+      "timestamp": "2024-12-11 19:21:38"
+    },
+    "folder_1": {
+      "gpu_id": 0,
+      "total_images": 1388,
+      "correct_predictions": 626,
+      "accuracy": 45.10086455331412,
+      "timestamp": "2024-12-11 19:18:35"
+    },
+    "folder_8": {
+      "gpu_id": 7,
+      "total_images": 1384,
+      "correct_predictions": 562,
+      "accuracy": 40.60693641618497,
+      "timestamp": "2024-12-11 19:20:35"
+    },
+    "folder_2": {
+      "gpu_id": 1,
+      "total_images": 1388,
+      "correct_predictions": 502,
+      "accuracy": 36.1671469740634,
+      "timestamp": "2024-12-11 19:16:46"
+    },
+    "folder_6": {
+      "gpu_id": 5,
+      "total_images": 1388,
+      "correct_predictions": 545,
+      "accuracy": 39.26512968299712,
+      "timestamp": "2024-12-11 19:22:23"
+    }
+  }
+}
