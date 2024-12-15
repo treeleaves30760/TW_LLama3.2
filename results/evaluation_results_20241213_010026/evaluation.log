@@ -1,0 +1,6 @@
+Starting evaluation at Fri Dec 13 01:00:26 CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/vslab_llama_recipe/checkpoints/tw_dataset_new-lr1e-4-5epoch
+Data root: Train_Images/
+Final reports generated:
+- Markdown report: results/evaluation_results_20241213_010026/final_results/final_report_tw_dataset_new-lr1e-4-5epoch_20241213_030043.md
+- JSON report: results/evaluation_results_20241213_010026/final_results/final_report_tw_dataset_new-lr1e-4-5epoch_20241213_030043.json

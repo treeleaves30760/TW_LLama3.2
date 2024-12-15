@@ -1,0 +1,4 @@
+Starting evaluation at Fri Dec 13 00:41:39 CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/vslab_llama_recipe/checkpoints/tw_dataset_new-lr1e-4-5epoch
+Data root: Distributed_Images/
+No JSON result files found in results/evaluation_results_20241213_004139
