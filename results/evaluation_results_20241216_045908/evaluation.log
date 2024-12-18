@@ -1,0 +1,6 @@
+Starting evaluation at Mon Dec 16 04:59:08 AM CST 2024
+Model path: /mnt/home/ntuspeechlabtaipei1/nthu/andy/vslab_llama_recipe/hf_ckpt/fine-tuned-classify-10epoch-lr1e-4-meta-llama
+Data root: Train_Images/
+Final reports generated:
+- Markdown report: results/evaluation_results_20241216_045908/final_results/final_report_fine-tuned-classify-10epoch-lr1e-4-meta-llama_20241216_070053.md
+- JSON report: results/evaluation_results_20241216_045908/final_results/final_report_fine-tuned-classify-10epoch-lr1e-4-meta-llama_20241216_070053.json
